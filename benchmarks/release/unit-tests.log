@@ -1,0 +1,26 @@
+test_benchmark_runs_and_reference_mode_are_applied (test_cli_contract.CLIContractTests.test_benchmark_runs_and_reference_mode_are_applied) ... ok
+test_changing_sequence_dimensions_are_rejected (test_cli_contract.CLIContractTests.test_changing_sequence_dimensions_are_rejected) ... ok
+test_macos_sidecar_files_are_not_treated_as_frames (test_cli_contract.CLIContractTests.test_macos_sidecar_files_are_not_treated_as_frames) ... ok
+test_precision_selects_and_validates_matching_profiles (test_cli_contract.CLIContractTests.test_precision_selects_and_validates_matching_profiles) ... ok
+test_temporal_windows_cover_every_frame_with_positive_weight (test_cli_contract.CLIContractTests.test_temporal_windows_cover_every_frame_with_positive_weight) ... ok
+test_shared_gate_weight_survives_pairing (test_mlx_dense_rewrite.DenseRewriteTests.test_shared_gate_weight_survives_pairing) ... ok
+test_half_convolution_rounds_before_bias (test_mlx_half_dense.HalfDenseTests.test_half_convolution_rounds_before_bias) ... ok
+test_packing_half_and_q8_retains_shared_arrays (test_mlx_half_dense.HalfDenseTests.test_packing_half_and_q8_retains_shared_arrays) ... ok
+test_channel_conv7_dispatch_falls_back_for_stride_and_precision (test_mlx_kernels.MLXKernelTests.test_channel_conv7_dispatch_falls_back_for_stride_and_precision) ... ok
+test_channel_conv7_two_outputs_bias_strides_and_edges (test_mlx_kernels.MLXKernelTests.test_channel_conv7_two_outputs_bias_strides_and_edges) ... ok
+test_half_kernels_remain_opt_in_and_padding_is_exact (test_mlx_kernels.MLXKernelTests.test_half_kernels_remain_opt_in_and_padding_is_exact) ... ok
+test_half_reconstruction_bias_is_applied_to_channels (test_mlx_kernels.MLXKernelTests.test_half_reconstruction_bias_is_applied_to_channels) ... ok
+test_padding_matches_torch_for_strides_and_boundaries (test_mlx_kernels.MLXKernelTests.test_padding_matches_torch_for_strides_and_boundaries) ... ok
+test_reconstruction_edges_batches_bias_and_noncontiguous (test_mlx_kernels.MLXKernelTests.test_reconstruction_edges_batches_bias_and_noncontiguous) ... ok
+test_unsupported_convolution_and_precision_use_reference (test_mlx_kernels.MLXKernelTests.test_unsupported_convolution_and_precision_use_reference) ... ok
+test_all_batch_sizes_preserve_frame_order_and_recurrent_state (test_mlx_pipeline_batching.PipelineBatchTests.test_all_batch_sizes_preserve_frame_order_and_recurrent_state) ... ok
+test_float_cast_preserves_indices_and_masks (test_mlx_precision.PrecisionTests.test_float_cast_preserves_indices_and_masks) ... ok
+test_graph_precision_is_opt_in_and_outputs_remain_float32 (test_mlx_precision.PrecisionTests.test_graph_precision_is_opt_in_and_outputs_remain_float32) ... ok
+test_mean_avoids_half_sum_overflow (test_mlx_precision.PrecisionTests.test_mean_avoids_half_sum_overflow) ... ok
+test_norm_large_inputs_is_finite (test_mlx_precision.PrecisionTests.test_norm_large_inputs_is_finite) ... ok
+test_q8_packed_linear_matches_dequantized_weight (test_mlx_precision.PrecisionTests.test_q8_packed_linear_matches_dequantized_weight) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.105s
+
+OK

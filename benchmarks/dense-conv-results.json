@@ -1,0 +1,1746 @@
+{
+  "endpoint": "decode through completed uint16 rendering; PNG writes excluded; fresh processes, one warmup and three measured runs per case/mode",
+  "external_evidence": "external-evidence/Research/CK2-Dense-Conv-Optimization",
+  "results": [
+    {
+      "case": "video",
+      "quality": {
+        "reference": "external-evidence/Research/CK2-Dense-Conv-Optimization/video-layout/quality",
+        "candidate": "external-evidence/Research/CK2-Dense-Conv-Optimization/video-dense-conv/quality",
+        "limits": {
+          "alpha": {
+            "mae": 2e-05,
+            "max": 0.002
+          },
+          "fg": {
+            "mae": 2e-05,
+            "max": 0.005
+          },
+          "checker": {
+            "mae": 2e-05,
+            "max": 0.005
+          }
+        },
+        "frames": [
+          {
+            "frame": "000000.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 24066,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000001.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 25116,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000002.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 24636,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000003.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 23109,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000004.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22167,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000005.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22610,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000006.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22240,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000007.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22096,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000008.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22074,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000009.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22930,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000010.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 23210,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000011.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22959,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000012.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 21856,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000013.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 21536,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000014.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22133,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000015.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 21420,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000016.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 19945,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000017.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 19482,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000018.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 20411,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000019.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22584,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000020.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 22869,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000021.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 23057,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000022.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 27329,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000023.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 31639,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000024.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 35286,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000025.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 37860,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000026.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 40628,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000027.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 43372,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000028.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 44861,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000029.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 49315,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000030.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 53883,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          },
+          {
+            "frame": "000031.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 57643,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          }
+        ],
+        "passed": true,
+        "notes": "Visible FG uses reference alpha > 0.01. These measure backend agreement, not ground truth."
+      },
+      "raw_max": 0.0,
+      "raw_mae": 0.0,
+      "cutout_max_code_difference": 0,
+      "checker_8bit_max": 0,
+      "temporal_alpha_error_max": 0.0,
+      "temporal_alpha_error_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "timings": {
+        "layout": {
+          "workflow_seconds": 39.50216495798668,
+          "samples_seconds": [
+            39.89786833402468,
+            39.02438858302776,
+            39.50216495798668
+          ],
+          "load_seconds": 1.5411350000067614,
+          "stage_medians": {
+            "rvm": 0.27133333194069564,
+            "foundations": 2.1240463739377446,
+            "stage1": 15.354363292106427,
+            "stage2": 18.25714099901961,
+            "render": 0.30755458207568154
+          },
+          "peak_physical_gib": 7.234152063727379
+        },
+        "dense-conv": {
+          "workflow_seconds": 33.15057404094841,
+          "samples_seconds": [
+            33.15057404094841,
+            32.999227957974654,
+            34.76400020800065
+          ],
+          "load_seconds": 1.695398457988631,
+          "stage_medians": {
+            "rvm": 0.2602219999535009,
+            "foundations": 2.094153042009566,
+            "stage1": 12.489027374016587,
+            "stage2": 15.431275792070664,
+            "render": 0.29753141588298604
+          },
+          "peak_physical_gib": 7.300084732472897
+        }
+      },
+      "workflow_speedup": 1.1915982181543108
+    },
+    {
+      "case": "hair-gauze",
+      "quality": {
+        "reference": "external-evidence/Research/CK2-Dense-Conv-Optimization/hair-gauze-layout/quality",
+        "candidate": "external-evidence/Research/CK2-Dense-Conv-Optimization/hair-gauze-dense-conv/quality",
+        "limits": {
+          "alpha": {
+            "mae": 2e-05,
+            "max": 0.002
+          },
+          "fg": {
+            "mae": 2e-05,
+            "max": 0.005
+          },
+          "checker": {
+            "mae": 2e-05,
+            "max": 0.005
+          }
+        },
+        "frames": [
+          {
+            "frame": "000000.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 305245,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          }
+        ],
+        "passed": true,
+        "notes": "Visible FG uses reference alpha > 0.01. These measure backend agreement, not ground truth."
+      },
+      "raw_max": 0.0,
+      "raw_mae": 0.0,
+      "cutout_max_code_difference": 0,
+      "checker_8bit_max": 0,
+      "temporal_alpha_error_max": 0.0,
+      "temporal_alpha_error_means": [],
+      "timings": {
+        "layout": {
+          "workflow_seconds": 1.7211094169761054,
+          "samples_seconds": [
+            1.7211094169761054,
+            1.69479824998416,
+            1.7479247089941055
+          ],
+          "load_seconds": 0.23266766604501754,
+          "stage_medians": {
+            "rvm": 0.02307854196988046,
+            "foundations": 0.12027045799186453,
+            "stage1": 0.4152611669851467,
+            "stage2": 0.9253785000182688,
+            "render": 0.021237666020169854
+          },
+          "peak_physical_gib": 7.118047535419464
+        },
+        "dense-conv": {
+          "workflow_seconds": 1.5238585830084048,
+          "samples_seconds": [
+            1.5202045000041835,
+            1.5571414160076529,
+            1.5238585830084048
+          ],
+          "load_seconds": 1.2072538750362583,
+          "stage_medians": {
+            "rvm": 0.023053625016473234,
+            "foundations": 0.12421725003514439,
+            "stage1": 0.3354117500130087,
+            "stage2": 0.8124477920355275,
+            "render": 0.020527624990791082
+          },
+          "peak_physical_gib": 6.921284779906273
+        }
+      },
+      "workflow_speedup": 1.1294416924031674
+    },
+    {
+      "case": "blue-hair-gauze",
+      "quality": {
+        "reference": "external-evidence/Research/CK2-Dense-Conv-Optimization/blue-hair-gauze-layout/quality",
+        "candidate": "external-evidence/Research/CK2-Dense-Conv-Optimization/blue-hair-gauze-dense-conv/quality",
+        "limits": {
+          "alpha": {
+            "mae": 2e-05,
+            "max": 0.002
+          },
+          "fg": {
+            "mae": 2e-05,
+            "max": 0.005
+          },
+          "checker": {
+            "mae": 2e-05,
+            "max": 0.005
+          }
+        },
+        "frames": [
+          {
+            "frame": "000000.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 498414,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          }
+        ],
+        "passed": true,
+        "notes": "Visible FG uses reference alpha > 0.01. These measure backend agreement, not ground truth."
+      },
+      "raw_max": 0.0,
+      "raw_mae": 0.0,
+      "cutout_max_code_difference": 0,
+      "checker_8bit_max": 0,
+      "temporal_alpha_error_max": 0.0,
+      "temporal_alpha_error_means": [],
+      "timings": {
+        "layout": {
+          "workflow_seconds": 1.6867457919870503,
+          "samples_seconds": [
+            1.6867457919870503,
+            1.6856631669797935,
+            1.7069763749605045
+          ],
+          "load_seconds": 0.21032716700574383,
+          "stage_medians": {
+            "rvm": 0.020313541986979544,
+            "foundations": 0.11520825000479817,
+            "stage1": 0.40284141700249165,
+            "stage2": 0.9203534999978729,
+            "render": 0.02019170898711309
+          },
+          "peak_physical_gib": 7.102529235184193
+        },
+        "dense-conv": {
+          "workflow_seconds": 1.4820020840270445,
+          "samples_seconds": [
+            1.5088279169867747,
+            1.4820020840270445,
+            1.4809439579839818
+          ],
+          "load_seconds": 0.22378395800478756,
+          "stage_medians": {
+            "rvm": 0.020287708030082285,
+            "foundations": 0.11867820896441117,
+            "stage1": 0.333805583009962,
+            "stage2": 0.7932974169962108,
+            "render": 0.018487250024918467
+          },
+          "peak_physical_gib": 7.030202016234398
+        }
+      },
+      "workflow_speedup": 1.1381534548208299
+    },
+    {
+      "case": "fur-motion",
+      "quality": {
+        "reference": "external-evidence/Research/CK2-Dense-Conv-Optimization/fur-motion-layout/quality",
+        "candidate": "external-evidence/Research/CK2-Dense-Conv-Optimization/fur-motion-dense-conv/quality",
+        "limits": {
+          "alpha": {
+            "mae": 2e-05,
+            "max": 0.002
+          },
+          "fg": {
+            "mae": 2e-05,
+            "max": 0.005
+          },
+          "checker": {
+            "mae": 2e-05,
+            "max": 0.005
+          }
+        },
+        "frames": [
+          {
+            "frame": "000000.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 108187,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          }
+        ],
+        "passed": true,
+        "notes": "Visible FG uses reference alpha > 0.01. These measure backend agreement, not ground truth."
+      },
+      "raw_max": 0.0,
+      "raw_mae": 0.0,
+      "cutout_max_code_difference": 0,
+      "checker_8bit_max": 0,
+      "temporal_alpha_error_max": 0.0,
+      "temporal_alpha_error_means": [],
+      "timings": {
+        "layout": {
+          "workflow_seconds": 1.6977206250303425,
+          "samples_seconds": [
+            1.678049334033858,
+            1.6977206250303425,
+            1.8651467090239748
+          ],
+          "load_seconds": 0.18482545798178762,
+          "stage_medians": {
+            "rvm": 0.013796999992337078,
+            "foundations": 0.11917795799672604,
+            "stage1": 0.40323633304797113,
+            "stage2": 0.9292321669636294,
+            "render": 0.02138712501619011
+          },
+          "peak_physical_gib": 7.111394681036472
+        },
+        "dense-conv": {
+          "workflow_seconds": 1.4710736669949256,
+          "samples_seconds": [
+            1.4660906660137698,
+            1.490884000028018,
+            1.4710736669949256
+          ],
+          "load_seconds": 0.21957554097753018,
+          "stage_medians": {
+            "rvm": 0.015208625001832843,
+            "foundations": 0.11711979197571054,
+            "stage1": 0.333798166946508,
+            "stage2": 0.7909979159594513,
+            "render": 0.01918308302992955
+          },
+          "peak_physical_gib": 7.00208006799221
+        }
+      },
+      "workflow_speedup": 1.1540690742554083
+    },
+    {
+      "case": "blue-fur-glass",
+      "quality": {
+        "reference": "external-evidence/Research/CK2-Dense-Conv-Optimization/blue-fur-glass-layout/quality",
+        "candidate": "external-evidence/Research/CK2-Dense-Conv-Optimization/blue-fur-glass-dense-conv/quality",
+        "limits": {
+          "alpha": {
+            "mae": 2e-05,
+            "max": 0.002
+          },
+          "fg": {
+            "mae": 2e-05,
+            "max": 0.005
+          },
+          "checker": {
+            "mae": 2e-05,
+            "max": 0.005
+          }
+        },
+        "frames": [
+          {
+            "frame": "000000.png",
+            "outputs": {
+              "alpha": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "fg": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "checker": {
+                "mae": 0.0,
+                "max": 0.0,
+                "p99_9": 0.0,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 0.0,
+                "max": 0.0,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 197223,
+              "mae": 0.0,
+              "max": 0.0
+            }
+          }
+        ],
+        "passed": true,
+        "notes": "Visible FG uses reference alpha > 0.01. These measure backend agreement, not ground truth."
+      },
+      "raw_max": 0.0,
+      "raw_mae": 0.0,
+      "cutout_max_code_difference": 0,
+      "checker_8bit_max": 0,
+      "temporal_alpha_error_max": 0.0,
+      "temporal_alpha_error_means": [],
+      "timings": {
+        "layout": {
+          "workflow_seconds": 1.6901395420427434,
+          "samples_seconds": [
+            1.726157792028971,
+            1.6715270829736255,
+            1.6901395420427434
+          ],
+          "load_seconds": 0.19722999999066815,
+          "stage_medians": {
+            "rvm": 0.02192883298266679,
+            "foundations": 0.12105337501270697,
+            "stage1": 0.40050054097082466,
+            "stage2": 0.9168235420365818,
+            "render": 0.020140959008131176
+          },
+          "peak_physical_gib": 7.109792463481426
+        },
+        "dense-conv": {
+          "workflow_seconds": 1.6168169589946046,
+          "samples_seconds": [
+            1.6744835829595104,
+            1.6168169589946046,
+            1.5633207079954445
+          ],
+          "load_seconds": 0.22851700003957376,
+          "stage_medians": {
+            "rvm": 0.018536916992161423,
+            "foundations": 0.1249724579975009,
+            "stage1": 0.36974066600669175,
+            "stage2": 0.8609363340074196,
+            "render": 0.02048512501642108
+          },
+          "peak_physical_gib": 7.00659666955471
+        }
+      },
+      "workflow_speedup": 1.0453499591529107
+    }
+  ]
+}

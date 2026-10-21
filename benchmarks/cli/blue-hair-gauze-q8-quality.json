@@ -1,0 +1,46 @@
+{
+  "case": "blue-hair-gauze",
+  "precision": "q8",
+  "outputs": 4,
+  "all_exact": true,
+  "passed": true,
+  "worst_max": 0.0,
+  "rows": [
+    {
+      "file": "alpha/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "e09e55486cededf1a102e6f6bbdade843c1c37ec7265d4fa611ea8b0681264c2",
+      "enabled_sha256": "e09e55486cededf1a102e6f6bbdade843c1c37ec7265d4fa611ea8b0681264c2"
+    },
+    {
+      "file": "checker/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "9e228fd04d2648b7791a651bded91ffff504243763450b3765a69cb58d735c49",
+      "enabled_sha256": "9e228fd04d2648b7791a651bded91ffff504243763450b3765a69cb58d735c49"
+    },
+    {
+      "file": "cutout/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "411c67532765ebb97f855a71547ec6c7b4db4b987d72b02d67c826e31d1b0994",
+      "enabled_sha256": "411c67532765ebb97f855a71547ec6c7b4db4b987d72b02d67c826e31d1b0994"
+    },
+    {
+      "file": "fg/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "87aecc6b13637010f910ae0cf32661d004836fcdd970176b5f1b010bf46c01cb",
+      "enabled_sha256": "87aecc6b13637010f910ae0cf32661d004836fcdd970176b5f1b010bf46c01cb"
+    }
+  ]
+}

@@ -1,0 +1,768 @@
+{
+  "hardware": "Apple M4 Pro, 48 GiB",
+  "precision": "FP32",
+  "stills": {
+    "hair-gauze": {
+      "mps": {
+        "seconds": [
+          3.58052537497133,
+          3.5956474999547936,
+          3.5363371249986812,
+          3.6523104590014555,
+          3.7102439999580383
+        ],
+        "median_seconds": 3.5956474999547936,
+        "min_seconds": 3.5363371249986812,
+        "max_seconds": 3.7102439999580383,
+        "p95_seconds": 3.6986572917667218,
+        "load_seconds": [
+          4.167561832990032,
+          5.414285666949581
+        ],
+        "warmup_seconds": [
+          4.233340332983062,
+          3.6522951669758186,
+          4.340298041992355,
+          3.7797142500057817
+        ],
+        "median_cpu_seconds": 1.5285210000000014,
+        "peak_rss_bytes": 1627439104,
+        "output": "out-v2/mlx-comparison/hair-gauze-mps-1/run-1",
+        "settings": {
+          "hann_chunk": 4,
+          "hann_stride": 2,
+          "carry_hint": true,
+          "hint_quality": 0.95,
+          "carry_hint_quality": 0.95,
+          "shape_quantum": 128,
+          "model_scale": 1.0,
+          "num_frames": -1,
+          "start_mode": "begin",
+          "seed": 0,
+          "low_vram": false,
+          "low_vram_foundation_chunk": 4,
+          "low_vram_mlp_chunk_tokens": 65536,
+          "low_vram_enc_frame_chunk": 1,
+          "low_vram_swin_window_batch": 16,
+          "low_vram_full_attn_query_chunk_tokens": 2048,
+          "stage2_batch": 1,
+          "outputs": [
+            "alpha",
+            "checker",
+            "cutout",
+            "fg"
+          ],
+          "linear_brightness": 1.0,
+          "linear_contrast": 1.0,
+          "linear_contrast_pivot": 0.18,
+          "frame_dir_fps": 24.0,
+          "frame_dir_linear": false,
+          "cutout_linear": false,
+          "despill_strength": 1.0,
+          "image_sequence": true
+        },
+        "input_hashes": {
+          "workspace/examples/plates/hair-gauze.png": "85333d7b9379d1936a215e02ac548756d70446b431174ca13656e4aa26a70aed"
+        }
+      },
+      "mlx": {
+        "seconds": [
+          2.3015222909743898,
+          2.314813375007361,
+          2.3857337499503046,
+          2.4123791250167415,
+          2.3983101249905303
+        ],
+        "median_seconds": 2.3857337499503046,
+        "min_seconds": 2.3015222909743898,
+        "max_seconds": 2.4123791250167415,
+        "p95_seconds": 2.4095653250114992,
+        "load_seconds": [
+          1.235643624968361,
+          1.354722291987855
+        ],
+        "warmup_seconds": [
+          2.455799749994185,
+          2.327149124990683,
+          2.4739345000125468,
+          2.4076895840116777
+        ],
+        "median_cpu_seconds": 1.4795730000000002,
+        "peak_rss_bytes": 5908545536,
+        "output": "out-v2/mlx-comparison/hair-gauze-mlx-1/run-1",
+        "settings": {
+          "hann_chunk": 4,
+          "hann_stride": 2,
+          "carry_hint": true,
+          "hint_quality": 0.95,
+          "carry_hint_quality": 0.95,
+          "shape_quantum": 128,
+          "model_scale": 1.0,
+          "num_frames": -1,
+          "start_mode": "begin",
+          "seed": 0,
+          "low_vram": false,
+          "low_vram_foundation_chunk": 4,
+          "low_vram_mlp_chunk_tokens": 65536,
+          "low_vram_enc_frame_chunk": 1,
+          "low_vram_swin_window_batch": 16,
+          "low_vram_full_attn_query_chunk_tokens": 2048,
+          "stage2_batch": 1,
+          "outputs": [
+            "alpha",
+            "checker",
+            "cutout",
+            "fg"
+          ],
+          "linear_brightness": 1.0,
+          "linear_contrast": 1.0,
+          "linear_contrast_pivot": 0.18,
+          "frame_dir_fps": 24.0,
+          "frame_dir_linear": false,
+          "cutout_linear": false,
+          "despill_strength": 1.0,
+          "image_sequence": true
+        },
+        "input_hashes": {
+          "workspace/examples/plates/hair-gauze.png": "85333d7b9379d1936a215e02ac548756d70446b431174ca13656e4aa26a70aed"
+        }
+      },
+      "speedup": 1.507145338422484,
+      "quality": {
+        "reference": "out-v2/mlx-comparison/hair-gauze-mps-1/run-1",
+        "candidate": "out-v2/mlx-comparison/hair-gauze-mlx-1/run-1",
+        "limits": {
+          "alpha": {
+            "mae": 2e-05,
+            "max": 0.002
+          },
+          "fg": {
+            "mae": 2e-05,
+            "max": 0.005
+          },
+          "checker": {
+            "mae": 2e-05,
+            "max": 0.005
+          }
+        },
+        "frames": [
+          {
+            "frame": "000000.png",
+            "outputs": {
+              "alpha": {
+                "mae": 2.949524197421145e-07,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "fg": {
+                "mae": 1.1170060274325547e-06,
+                "max": 6.103608758678547e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "checker": {
+                "mae": 3.9128433470333354e-07,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 5.6038807339864e-07,
+                "max": 0.00012683782288014367,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 4.366436451444634e-07,
+                "max": 0.00021209637627101277,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 305246,
+              "mae": 2.044677407596856e-06,
+              "max": 6.103608758678547e-05
+            }
+          }
+        ],
+        "passed": true,
+        "notes": "Visible FG uses reference alpha > 0.01. These measure backend agreement, not ground truth."
+      }
+    },
+    "fur-motion": {
+      "mps": {
+        "seconds": [
+          3.531236916955095,
+          3.503812208015006,
+          3.4834510409855284,
+          3.500291541975457,
+          3.5035623330040835
+        ],
+        "median_seconds": 3.5035623330040835,
+        "min_seconds": 3.4834510409855284,
+        "max_seconds": 3.531236916955095,
+        "p95_seconds": 3.525751975167077,
+        "load_seconds": [
+          5.113862875034101,
+          4.421431625029072
+        ],
+        "warmup_seconds": [
+          4.043522582971491,
+          3.5791647500009276,
+          4.120157583034597,
+          3.6053212080150843
+        ],
+        "median_cpu_seconds": 1.3878839999999997,
+        "peak_rss_bytes": 2657189888,
+        "output": "out-v2/mlx-comparison/fur-motion-mps-1/run-1",
+        "settings": {
+          "hann_chunk": 4,
+          "hann_stride": 2,
+          "carry_hint": true,
+          "hint_quality": 0.95,
+          "carry_hint_quality": 0.95,
+          "shape_quantum": 128,
+          "model_scale": 1.0,
+          "num_frames": -1,
+          "start_mode": "begin",
+          "seed": 0,
+          "low_vram": false,
+          "low_vram_foundation_chunk": 4,
+          "low_vram_mlp_chunk_tokens": 65536,
+          "low_vram_enc_frame_chunk": 1,
+          "low_vram_swin_window_batch": 16,
+          "low_vram_full_attn_query_chunk_tokens": 2048,
+          "stage2_batch": 1,
+          "outputs": [
+            "alpha",
+            "checker",
+            "cutout",
+            "fg"
+          ],
+          "linear_brightness": 1.0,
+          "linear_contrast": 1.0,
+          "linear_contrast_pivot": 0.18,
+          "frame_dir_fps": 24.0,
+          "frame_dir_linear": false,
+          "cutout_linear": false,
+          "despill_strength": 1.0,
+          "image_sequence": true
+        },
+        "input_hashes": {
+          "workspace/examples/plates/fur-motion.png": "06cb8922b21a97a6c536aa647aaab2523e7f197b46529b6797a8b0322985265e"
+        }
+      },
+      "mlx": {
+        "seconds": [
+          2.2997602919931524,
+          2.344797916011885,
+          2.349503959005233,
+          2.2088075420469977,
+          2.2570775829954073
+        ],
+        "median_seconds": 2.2997602919931524,
+        "min_seconds": 2.2088075420469977,
+        "max_seconds": 2.349503959005233,
+        "p95_seconds": 2.3485627504065634,
+        "load_seconds": [
+          0.18486716598272324,
+          1.4660755419754423
+        ],
+        "warmup_seconds": [
+          2.4167010000091977,
+          2.3222172079840675,
+          2.4051035000011325,
+          2.333438500005286
+        ],
+        "median_cpu_seconds": 1.3897370000000002,
+        "peak_rss_bytes": 5899714560,
+        "output": "out-v2/mlx-comparison/fur-motion-mlx-1/run-1",
+        "settings": {
+          "hann_chunk": 4,
+          "hann_stride": 2,
+          "carry_hint": true,
+          "hint_quality": 0.95,
+          "carry_hint_quality": 0.95,
+          "shape_quantum": 128,
+          "model_scale": 1.0,
+          "num_frames": -1,
+          "start_mode": "begin",
+          "seed": 0,
+          "low_vram": false,
+          "low_vram_foundation_chunk": 4,
+          "low_vram_mlp_chunk_tokens": 65536,
+          "low_vram_enc_frame_chunk": 1,
+          "low_vram_swin_window_batch": 16,
+          "low_vram_full_attn_query_chunk_tokens": 2048,
+          "stage2_batch": 1,
+          "outputs": [
+            "alpha",
+            "checker",
+            "cutout",
+            "fg"
+          ],
+          "linear_brightness": 1.0,
+          "linear_contrast": 1.0,
+          "linear_contrast_pivot": 0.18,
+          "frame_dir_fps": 24.0,
+          "frame_dir_linear": false,
+          "cutout_linear": false,
+          "despill_strength": 1.0,
+          "image_sequence": true
+        },
+        "input_hashes": {
+          "workspace/examples/plates/fur-motion.png": "06cb8922b21a97a6c536aa647aaab2523e7f197b46529b6797a8b0322985265e"
+        }
+      },
+      "speedup": 1.523446745820462,
+      "quality": {
+        "reference": "out-v2/mlx-comparison/fur-motion-mps-1/run-1",
+        "candidate": "out-v2/mlx-comparison/fur-motion-mlx-1/run-1",
+        "limits": {
+          "alpha": {
+            "mae": 2e-05,
+            "max": 0.002
+          },
+          "fg": {
+            "mae": 2e-05,
+            "max": 0.005
+          },
+          "checker": {
+            "mae": 2e-05,
+            "max": 0.005
+          }
+        },
+        "frames": [
+          {
+            "frame": "000000.png",
+            "outputs": {
+              "alpha": {
+                "mae": 9.578216755300121e-08,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "fg": {
+                "mae": 1.0585362629410474e-06,
+                "max": 9.15541313801782e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "checker": {
+                "mae": 1.4179925942913503e-07,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 1.7988670639665123e-07,
+                "max": 9.548864461576823e-05,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 1.7844538014098253e-07,
+                "max": 0.00019692164163954626,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 108188,
+              "mae": 1.6829098353919236e-06,
+              "max": 9.15541313801782e-05
+            }
+          }
+        ],
+        "passed": true,
+        "notes": "Visible FG uses reference alpha > 0.01. These measure backend agreement, not ground truth."
+      }
+    }
+  },
+  "video": {
+    "video-six": {
+      "mps": {
+        "seconds": [
+          21.864468417013995,
+          21.923702791973483,
+          22.119440000038594
+        ],
+        "median_seconds": 21.923702791973483,
+        "min_seconds": 21.864468417013995,
+        "max_seconds": 22.119440000038594,
+        "p95_seconds": 22.09986627923208,
+        "load_seconds": [
+          4.410317125031725
+        ],
+        "warmup_seconds": [
+          21.94697112502763
+        ],
+        "median_cpu_seconds": 7.581212000000001,
+        "peak_rss_bytes": 4387733504,
+        "output": "out-v2/mlx-comparison/video-six-mps-0/run-2",
+        "settings": {
+          "hann_chunk": 4,
+          "hann_stride": 2,
+          "carry_hint": true,
+          "hint_quality": 0.95,
+          "carry_hint_quality": 0.95,
+          "shape_quantum": 128,
+          "model_scale": 1.0,
+          "num_frames": -1,
+          "start_mode": "begin",
+          "seed": 0,
+          "low_vram": true,
+          "low_vram_foundation_chunk": 4,
+          "low_vram_mlp_chunk_tokens": 65536,
+          "low_vram_enc_frame_chunk": 1,
+          "low_vram_swin_window_batch": 16,
+          "low_vram_full_attn_query_chunk_tokens": 2048,
+          "stage2_batch": 1,
+          "outputs": [
+            "alpha",
+            "checker",
+            "cutout",
+            "fg"
+          ],
+          "linear_brightness": 1.0,
+          "linear_contrast": 1.0,
+          "linear_contrast_pivot": 0.18,
+          "frame_dir_fps": 24.0,
+          "frame_dir_linear": false,
+          "cutout_linear": false,
+          "despill_strength": 1.0,
+          "image_sequence": true
+        },
+        "input_hashes": {
+          "workspace/out-v2/static-hair-six-frames.mkv": "913868db5fa0c4332ecd516b50f7fd42a034e1663644952bad38c19c5fb3b355"
+        }
+      },
+      "mlx": {
+        "seconds": [
+          15.526467916963156,
+          15.89814554201439,
+          15.4593659589882
+        ],
+        "median_seconds": 15.526467916963156,
+        "min_seconds": 15.4593659589882,
+        "max_seconds": 15.89814554201439,
+        "p95_seconds": 15.860977779509266,
+        "load_seconds": [
+          1.306991041987203
+        ],
+        "warmup_seconds": [
+          15.240432666963898
+        ],
+        "median_cpu_seconds": 10.588577,
+        "peak_rss_bytes": 6659571712,
+        "output": "out-v2/mlx-comparison/video-six-mlx-0/run-2",
+        "settings": {
+          "hann_chunk": 4,
+          "hann_stride": 2,
+          "carry_hint": true,
+          "hint_quality": 0.95,
+          "carry_hint_quality": 0.95,
+          "shape_quantum": 128,
+          "model_scale": 1.0,
+          "num_frames": -1,
+          "start_mode": "begin",
+          "seed": 0,
+          "low_vram": true,
+          "low_vram_foundation_chunk": 4,
+          "low_vram_mlp_chunk_tokens": 65536,
+          "low_vram_enc_frame_chunk": 1,
+          "low_vram_swin_window_batch": 16,
+          "low_vram_full_attn_query_chunk_tokens": 2048,
+          "stage2_batch": 1,
+          "outputs": [
+            "alpha",
+            "checker",
+            "cutout",
+            "fg"
+          ],
+          "linear_brightness": 1.0,
+          "linear_contrast": 1.0,
+          "linear_contrast_pivot": 0.18,
+          "frame_dir_fps": 24.0,
+          "frame_dir_linear": false,
+          "cutout_linear": false,
+          "despill_strength": 1.0,
+          "image_sequence": true
+        },
+        "input_hashes": {
+          "workspace/out-v2/static-hair-six-frames.mkv": "913868db5fa0c4332ecd516b50f7fd42a034e1663644952bad38c19c5fb3b355"
+        }
+      },
+      "speedup": 1.4120212600330784,
+      "quality": {
+        "reference": "out-v2/mlx-comparison/video-six-mps-0/run-2",
+        "candidate": "out-v2/mlx-comparison/video-six-mlx-0/run-2",
+        "limits": {
+          "alpha": {
+            "mae": 2e-05,
+            "max": 0.002
+          },
+          "fg": {
+            "mae": 2e-05,
+            "max": 0.005
+          },
+          "checker": {
+            "mae": 2e-05,
+            "max": 0.005
+          }
+        },
+        "frames": [
+          {
+            "frame": "000000.png",
+            "outputs": {
+              "alpha": {
+                "mae": 2.923233336075188e-07,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "fg": {
+                "mae": 1.106029581692223e-06,
+                "max": 4.57770656900891e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "checker": {
+                "mae": 3.9201840918371847e-07,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 5.575064882773832e-07,
+                "max": 0.00011941564421102946,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 4.396585929700647e-07,
+                "max": 0.0002052234431145772,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 298646,
+              "mae": 2.0319406771531754e-06,
+              "max": 4.57770656900891e-05
+            }
+          },
+          {
+            "frame": "000001.png",
+            "outputs": {
+              "alpha": {
+                "mae": 2.815256477484596e-07,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "fg": {
+                "mae": 1.1169348734093636e-06,
+                "max": 0.0001373311970702673,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "checker": {
+                "mae": 3.9631937420095417e-07,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 5.561968725470216e-07,
+                "max": 0.00012157295290202152,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 4.387901630205834e-07,
+                "max": 0.00019707578022954645,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 299199,
+              "mae": 2.0530898983462767e-06,
+              "max": 0.0001373311970702673
+            }
+          },
+          {
+            "frame": "000002.png",
+            "outputs": {
+              "alpha": {
+                "mae": 3.555184150863247e-07,
+                "max": 4.57770656900891e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "fg": {
+                "mae": 1.1840624241502578e-06,
+                "max": 6.103608758678547e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "checker": {
+                "mae": 4.1950577959462096e-07,
+                "max": 3.0518043793392735e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 6.044811371430511e-07,
+                "max": 0.00011211316637449453,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 4.700799211948342e-07,
+                "max": 0.0001971088431899394,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 294098,
+              "mae": 2.2334565878961804e-06,
+              "max": 6.103608758678547e-05
+            }
+          },
+          {
+            "frame": "000003.png",
+            "outputs": {
+              "alpha": {
+                "mae": 5.253030514020414e-07,
+                "max": 0.00019836728465705278,
+                "p99_9": 3.0518043793392735e-05,
+                "passed": true
+              },
+              "fg": {
+                "mae": 1.5070769566865365e-06,
+                "max": 0.00012207217517357094,
+                "p99_9": 3.0518043793392735e-05,
+                "passed": true
+              },
+              "checker": {
+                "mae": 4.99801239277291e-07,
+                "max": 9.15541313801782e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 7.432884816806543e-07,
+                "max": 0.00013637988334329332,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 5.803828910766173e-07,
+                "max": 0.00019710744616344318,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 290633,
+              "mae": 3.0367746018021114e-06,
+              "max": 0.00012207217517357094
+            }
+          },
+          {
+            "frame": "000004.png",
+            "outputs": {
+              "alpha": {
+                "mae": 5.514774956497875e-07,
+                "max": 0.00010681315327687457,
+                "p99_9": 3.0518043793392735e-05,
+                "passed": true
+              },
+              "fg": {
+                "mae": 1.4634988257526162e-06,
+                "max": 7.629510948348184e-05,
+                "p99_9": 3.0518043793392735e-05,
+                "passed": true
+              },
+              "checker": {
+                "mae": 4.865684957806547e-07,
+                "max": 6.103608758678547e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 7.373549955172517e-07,
+                "max": 0.00012841190689052984,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 5.809147630881462e-07,
+                "max": 0.00019714656290531745,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 287880,
+              "mae": 2.9621025890452607e-06,
+              "max": 7.629510948348184e-05
+            }
+          },
+          {
+            "frame": "000005.png",
+            "outputs": {
+              "alpha": {
+                "mae": 5.089173448288605e-07,
+                "max": 0.00010681315327687457,
+                "p99_9": 3.0518043793392735e-05,
+                "passed": true
+              },
+              "fg": {
+                "mae": 1.481488850431217e-06,
+                "max": 0.00012207217517357094,
+                "p99_9": 3.0518043793392735e-05,
+                "passed": true
+              },
+              "checker": {
+                "mae": 4.946659517228779e-07,
+                "max": 7.629510948348184e-05,
+                "p99_9": 1.5259021896696368e-05,
+                "passed": true
+              },
+              "composite_black": {
+                "mae": 7.327220348793712e-07,
+                "max": 0.00012126332506898208,
+                "passed": true
+              },
+              "composite_white": {
+                "mae": 5.750549192737563e-07,
+                "max": 0.00019714656290531702,
+                "passed": true
+              }
+            },
+            "transition_foreground": {
+              "pixels": 288102,
+              "mae": 3.014055201826321e-06,
+              "max": 0.00012207217517357094
+            }
+          }
+        ],
+        "passed": true,
+        "notes": "Visible FG uses reference alpha > 0.01. These measure backend agreement, not ground truth."
+      }
+    }
+  },
+  "memory": {
+    "mps": {
+      "backend": "mps",
+      "input": "examples/inputs/hair-gauze",
+      "status": "complete",
+      "method": "macOS proc_pid_rusage RUSAGE_INFO_V0 ri_phys_footprint; 20 ms polling",
+      "scope": "isolated process; two measured runs following one warm-up; timings remain in separate worker record",
+      "peak_including_load_and_compilation_bytes": 20673564536,
+      "peak_after_warmup_bytes": 20673564536
+    },
+    "mlx": {
+      "backend": "mlx",
+      "input": "examples/inputs/hair-gauze",
+      "status": "complete",
+      "method": "macOS proc_pid_rusage RUSAGE_INFO_V0 ri_phys_footprint; 20 ms polling",
+      "scope": "isolated process; two measured runs following one warm-up; timings remain in separate worker record",
+      "peak_including_load_and_compilation_bytes": 7737415368,
+      "peak_after_warmup_bytes": 7719966456
+    },
+    "peak_reduction_fraction": 0.6265778723085318
+  }
+}

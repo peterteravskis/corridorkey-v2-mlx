@@ -1,0 +1,178 @@
+{
+  "backend": "mlx",
+  "compiled": true,
+  "created_utc": "2026-10-18T02:00:47.082862+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "precision": "FP32 weights and compute; upstream BF16 input and FP16 baton storage",
+  "settings": {
+    "hann_chunk": 4,
+    "hann_stride": 2,
+    "carry_hint": true,
+    "hint_quality": 0.95,
+    "carry_hint_quality": 0.95,
+    "shape_quantum": 128,
+    "model_scale": 1.0,
+    "num_frames": -1,
+    "start_mode": "begin",
+    "seed": 0,
+    "low_vram": false,
+    "low_vram_foundation_chunk": 4,
+    "low_vram_mlp_chunk_tokens": 65536,
+    "low_vram_enc_frame_chunk": 1,
+    "low_vram_swin_window_batch": 16,
+    "low_vram_full_attn_query_chunk_tokens": 2048,
+    "stage2_batch": 1,
+    "outputs": [
+      "alpha",
+      "checker",
+      "cutout",
+      "fg"
+    ],
+    "linear_brightness": 1.0,
+    "linear_contrast": 1.0,
+    "linear_contrast_pivot": 0.18,
+    "frame_dir_fps": 24.0,
+    "frame_dir_linear": false,
+    "cutout_linear": false,
+    "despill_strength": 1.0,
+    "image_sequence": true
+  },
+  "writer": {
+    "ffmpeg_bin": "ffmpeg",
+    "codec": "libx264",
+    "crf": 12,
+    "preset": "medium",
+    "pix_fmt": "yuv444p",
+    "bitrate": null,
+    "threads": 2
+  },
+  "input_hashes": {
+    "workspace/examples/plates/fur-motion.png": "06cb8922b21a97a6c536aa647aaab2523e7f197b46529b6797a8b0322985265e"
+  },
+  "checkpoint_sha256": "61aa162d2b8553989c315aea5067fe00b4e9060d106fd75b52053df827303787",
+  "source_hashes": {
+    "corridorkey/__init__.py": "dcd0c0a3100e7221dbbebd26f71f975cc90e1134e62f620ce6a59eb0f12da027",
+    "corridorkey/blocks.py": "9256a5c7f22084cb360749a84b65f6eede65c964683eb5c8c397931c0768351b",
+    "corridorkey/color_utils.py": "0fa9ac26666d093bb5462ba611d6b565226abc12542da69bc5db473d628cd2cf",
+    "corridorkey/device.py": "0fd6f1e7adb67a86e84087cf6a3ab72cac34b143d509456545732e3ed0b557e5",
+    "corridorkey/foundations.py": "05760259a9d55d31368908adebada406987c7ea632eabed1f7009e4a7a32f736",
+    "corridorkey/mlx_backend.py": "d008d2138ff16a4be10f3527b7b9e15bd7ee79c334577420771a684903ff923d",
+    "corridorkey/mlx_graph.py": "9da6e3320157719da4400f5cde2f670e2300d6e08ed6d062a4b0531dc509ddd0",
+    "corridorkey/mlx_render.py": "229769d7d50d4b9b8983c061c886d938ab796e07eaf14eb9b651b8b5054ba12e",
+    "corridorkey/model.py": "93880beaaa06ef861ea21e8b862b8412c5f78ff9595289046b6bcb86cb1e3397",
+    "corridorkey/rope.py": "a22212ac2f3dc874cb3042b300ebf917fd4227ce117212c56a7b5d8709fb4f34",
+    "corridorkey/runtime.py": "0ac37b62c054ebc42cdfe66c8d4140675ee8f06e19dd324a83c6ce993d12dd48",
+    "corridorkey/rvm.py": "d96b70e937484c29d38fc759b170f255fd901c861f87514dccec2d418ab2fce6",
+    "corridorkey/stage1.py": "76da4686bda59db2e43eaef444197119053f88174e21d1e8e87aa3dd085df84c",
+    "corridorkey/stage2.py": "e6f41687f7303346188e1847381e8422d8ee66f8b73c039add7f53830affc442",
+    "corridorkey/video_io.py": "27f479d9289524f1702074d7babea9de1a308a01c8a1911c1ae14054bf6bc689"
+  },
+  "runner_sha256": "9b3af2a4fcaa05ca37fba3f8b38f975f29c262e1c055ee31b87a054cdfcc785f",
+  "torch": "2.9.1",
+  "torch_threads": 8,
+  "endpoint": "decode through inference, corrected rendering, and four completed 16-bit PNG writes per frame; model load separate",
+  "memory_method": "process RSS sampled every 20 ms during each run; includes CPU and GPU-resident pages reported by macOS, not total system pressure",
+  "warmups": [
+    {
+      "seconds": 2.4167010000091977,
+      "cpu_seconds": 1.540406,
+      "peak_sampled_rss_bytes": 5806718976,
+      "rss_after_bytes": 5765529600,
+      "rss_samples": 101,
+      "mlx_peak_active_bytes": 7201725856,
+      "mlx_cache_bytes": 269582604
+    },
+    {
+      "seconds": 2.3222172079840675,
+      "cpu_seconds": 1.4098379999999997,
+      "peak_sampled_rss_bytes": 5879431168,
+      "rss_after_bytes": 5803687936,
+      "rss_samples": 96,
+      "mlx_peak_active_bytes": 7220600336,
+      "mlx_cache_bytes": 275873924
+    }
+  ],
+  "runs": [
+    {
+      "seconds": 2.2997602919931524,
+      "cpu_seconds": 1.3897370000000002,
+      "peak_sampled_rss_bytes": 5859115008,
+      "rss_after_bytes": 5817925632,
+      "rss_samples": 95,
+      "mlx_peak_active_bytes": 7220600336,
+      "mlx_cache_bytes": 274301120
+    },
+    {
+      "seconds": 2.344797916011885,
+      "cpu_seconds": 1.3891360000000006,
+      "peak_sampled_rss_bytes": 5878235136,
+      "rss_after_bytes": 5830574080,
+      "rss_samples": 97,
+      "mlx_peak_active_bytes": 7220600336,
+      "mlx_cache_bytes": 269582468
+    },
+    {
+      "seconds": 2.349503959005233,
+      "cpu_seconds": 1.409293,
+      "peak_sampled_rss_bytes": 5877334016,
+      "rss_after_bytes": 5831737344,
+      "rss_samples": 97,
+      "mlx_peak_active_bytes": 7220600336,
+      "mlx_cache_bytes": 282165380
+    }
+  ],
+  "status": "complete",
+  "mlx": "0.32.4",
+  "mlx_cache_limit_mib": 256,
+  "graph_provenance": {
+    "checkpoint_sha256": "61aa162d2b8553989c315aea5067fe00b4e9060d106fd75b52053df827303787",
+    "torch": "2.9.1",
+    "shape": [
+      1024,
+      1536
+    ],
+    "frames": 1,
+    "source_hashes": {
+      "corridorkey/stage1.py": "76da4686bda59db2e43eaef444197119053f88174e21d1e8e87aa3dd085df84c",
+      "corridorkey/device.py": "0fd6f1e7adb67a86e84087cf6a3ab72cac34b143d509456545732e3ed0b557e5",
+      "corridorkey/mlx_backend.py": "fd6c0983813b9f9731004d8e80e2703b886612b30c42dd679e2942f9aec86f44",
+      "corridorkey/__init__.py": "dcd0c0a3100e7221dbbebd26f71f975cc90e1134e62f620ce6a59eb0f12da027",
+      "corridorkey/runtime.py": "529c8d2654e6a6edb3da86b001675a821b7b77240e0ec8faf53d75481d58fe68",
+      "corridorkey/model.py": "93880beaaa06ef861ea21e8b862b8412c5f78ff9595289046b6bcb86cb1e3397",
+      "corridorkey/video_io.py": "27f479d9289524f1702074d7babea9de1a308a01c8a1911c1ae14054bf6bc689",
+      "corridorkey/rope.py": "a22212ac2f3dc874cb3042b300ebf917fd4227ce117212c56a7b5d8709fb4f34",
+      "corridorkey/blocks.py": "9256a5c7f22084cb360749a84b65f6eede65c964683eb5c8c397931c0768351b",
+      "corridorkey/stage2.py": "e6f41687f7303346188e1847381e8422d8ee66f8b73c039add7f53830affc442",
+      "corridorkey/color_utils.py": "0fa9ac26666d093bb5462ba611d6b565226abc12542da69bc5db473d628cd2cf",
+      "corridorkey/mlx_graph.py": "6790285b21a787cddc087e89cda66cce5fd47f8663803b020ee0dbf5476ab7a4",
+      "corridorkey/foundations.py": "05760259a9d55d31368908adebada406987c7ea632eabed1f7009e4a7a32f736",
+      "corridorkey/rvm.py": "d96b70e937484c29d38fc759b170f255fd901c861f87514dccec2d418ab2fce6"
+    }
+  },
+  "graph_hashes": {
+    ".mlx-models/1024x1536-t1/foundations/graph.json": "77c756637c439664ed0054ee7a295f1b491eb66134d93b485524e66d953cfaa9",
+    ".mlx-models/1024x1536-t1/rvm/graph.json": "77bd2505c003d242026266fbfef839e882885c0f64ca2093aa8308e765d44d3c",
+    ".mlx-models/1024x1536-t1/stage1/graph.json": "0b8f045dc7e1020cf211341d60beb070cf6a278706d8ae095e0928227b5f1148",
+    ".mlx-models/1024x1536-t1/stage2/graph.json": "9440b147e0acc0808c70df34e0c041c9fdc8286627b1f3cf2518e700d2b850d4",
+    ".mlx-models/1024x1536-t4/stage1/graph.json": "7effa7d44bea3c4c9b0638e7204d840e8d3ba7ccdce86cc363a6d8da50256720"
+  },
+  "device": {
+    "device_name": "Apple M4 Pro",
+    "max_recommended_working_set_size": 40200896512,
+    "memory_size": 51539607552,
+    "architecture": "applegpu_g16s",
+    "max_buffer_length": 30150672384,
+    "resource_limit": 499000
+  },
+  "load_seconds": 0.18486716598272324,
+  "median_seconds": 2.344797916011885,
+  "peak_sampled_rss_bytes": 5878235136,
+  "process_peak_including_load_bytes": 5909889024,
+  "final_output": "out-v2/mlx-comparison/fur-motion-mlx-0/run-2",
+  "output_hashes": {
+    "alpha/000000.png": "c14c2e18fee8fb70532c439ce6684601570b18f516d19bb47df046cbb698678d",
+    "checker_comp_despill100/000000.png": "636384b49d50b0087e2237999807f6beb7fceb96194e077390cc5233f6bbbf9a",
+    "cutout/000000.png": "fb93bdbed89a0c7ebbc3916acdab8326f903b46df8ae3eb744a3c4f11a858cab",
+    "fg/000000.png": "ffb686b7cdb1e922c83f395e1f9050ce8f043f7df91b5678c52b9ef3937afaa3"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "case": "blue-fur-glass",
+  "precision": "fp32",
+  "outputs": 4,
+  "all_exact": false,
+  "passed": true,
+  "worst_max": 1.5259021896696422e-05,
+  "rows": [
+    {
+      "file": "alpha/000000.png",
+      "max": 1.5259021896696422e-05,
+      "mae": 8.727401795875585e-08,
+      "exact": false,
+      "passed": true,
+      "reference_sha256": "018b845ac9d83c26fc92ef102833cb1743dc55cd353d3ab9ddceab8677df84a2",
+      "enabled_sha256": "f4a3099b572f377da0c93c3f037e03f4849971489613305d1bfaa344cf615cc9"
+    },
+    {
+      "file": "checker/000000.png",
+      "max": 1.5259021896696422e-05,
+      "mae": 3.473595167867111e-07,
+      "exact": false,
+      "passed": true,
+      "reference_sha256": "98d1985c8ae671546966801593491f9c5b43fecec18f097a105a02f2badb5875",
+      "enabled_sha256": "840e7d89593872eff4069022877f134274c5c699b92bb3d65e9ecc62dea04d2c"
+    },
+    {
+      "file": "cutout/000000.png",
+      "max": 1.5259021896696422e-05,
+      "mae": 7.474150626172049e-07,
+      "exact": false,
+      "passed": true,
+      "reference_sha256": "0628a8d7fcf218f7d72f9479bc1544f1a8806bf2ae092bc508550e1191c0937b",
+      "enabled_sha256": "af91a25b1a39b972f92bbbda1eb729763125c43e4aba269a31cda20e0894b220"
+    },
+    {
+      "file": "fg/000000.png",
+      "max": 1.5259021896696422e-05,
+      "mae": 7.474150626172049e-07,
+      "exact": false,
+      "passed": true,
+      "reference_sha256": "fbab21babe6fb0d2ca18398b19c377c4f74b059fcd6fa68dcfcf9c1872097759",
+      "enabled_sha256": "9ad99099136ce8f490a1daab8306d5c48b58e1bfc20d137b8c90b5ef79dec367"
+    }
+  ]
+}

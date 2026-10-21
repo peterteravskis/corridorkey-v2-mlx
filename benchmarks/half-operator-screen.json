@@ -1,0 +1,144 @@
+[
+  {
+    "precision": "fp16",
+    "mode": "baseline",
+    "options": [],
+    "samples": [
+      0.6422085830126889,
+      0.6492885420448147,
+      0.6425415410194546,
+      0.6380169580224901,
+      0.6405412500025705
+    ],
+    "median": 0.6422085830126889,
+    "raw_max": 0.0,
+    "raw_mae": 0.0,
+    "finite": true
+  },
+  {
+    "precision": "fp16",
+    "mode": "half-paired",
+    "options": [
+      "half_paired_dense"
+    ],
+    "samples": [
+      0.6534090830245987,
+      0.6511013749986887,
+      0.6480704579735175,
+      0.6490474159945734,
+      0.6532796249957755
+    ],
+    "median": 0.6511013749986887,
+    "raw_max": 0.0,
+    "raw_mae": 0.0,
+    "finite": true
+  },
+  {
+    "precision": "fp16",
+    "mode": "half-conv",
+    "options": [
+      "half_channel_conv7"
+    ],
+    "samples": [
+      0.5516539159580134,
+      0.5554261670331471,
+      0.551189833029639,
+      0.5490949169616215,
+      0.5644009999814443
+    ],
+    "median": 0.5516539159580134,
+    "raw_max": 0.0,
+    "raw_mae": 0.0,
+    "finite": true
+  },
+  {
+    "precision": "fp16",
+    "mode": "half-dense-conv",
+    "options": [
+      "half_paired_dense",
+      "half_channel_conv7"
+    ],
+    "samples": [
+      0.5550851249718107,
+      0.5618247500387952,
+      0.5609445419977419,
+      0.5591157919843681,
+      0.561892458004877
+    ],
+    "median": 0.5609445419977419,
+    "raw_max": 0.0,
+    "raw_mae": 0.0,
+    "finite": true
+  },
+  {
+    "precision": "q8",
+    "mode": "baseline",
+    "options": [],
+    "samples": [
+      0.6625701669836417,
+      0.6635530000203289,
+      0.6641396249760874,
+      0.6647621670272201,
+      0.6629066669847816
+    ],
+    "median": 0.6635530000203289,
+    "raw_max": 0.0,
+    "raw_mae": 0.0,
+    "finite": true
+  },
+  {
+    "precision": "q8",
+    "mode": "half-paired",
+    "options": [
+      "half_paired_dense"
+    ],
+    "samples": [
+      0.6701335000107065,
+      0.67317504103994,
+      0.6723331669927575,
+      0.6728363330475986,
+      0.6685139169567265
+    ],
+    "median": 0.6723331669927575,
+    "raw_max": 0.0,
+    "raw_mae": 0.0,
+    "finite": true
+  },
+  {
+    "precision": "q8",
+    "mode": "half-conv",
+    "options": [
+      "half_channel_conv7"
+    ],
+    "samples": [
+      0.5773219169932418,
+      0.5750457500107586,
+      0.5764189999899827,
+      0.5773950410075486,
+      0.5767855410231277
+    ],
+    "median": 0.5767855410231277,
+    "raw_max": 0.0,
+    "raw_mae": 0.0,
+    "finite": true
+  },
+  {
+    "precision": "q8",
+    "mode": "half-dense-conv",
+    "options": [
+      "half_paired_dense",
+      "half_channel_conv7"
+    ],
+    "samples": [
+      0.5795591250061989,
+      0.5835053329938091,
+      0.5822699589771219,
+      0.5818790829507634,
+      0.5853966670110822
+    ],
+    "median": 0.5822699589771219,
+    "raw_max": 0.0,
+    "raw_mae": 0.0,
+    "finite": true
+  }
+]

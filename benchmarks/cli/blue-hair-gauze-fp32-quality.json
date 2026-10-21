@@ -1,0 +1,46 @@
+{
+  "case": "blue-hair-gauze",
+  "precision": "fp32",
+  "outputs": 4,
+  "all_exact": false,
+  "passed": true,
+  "worst_max": 3.0518043793392844e-05,
+  "rows": [
+    {
+      "file": "alpha/000000.png",
+      "max": 1.5259021896696422e-05,
+      "mae": 2.149447689966868e-07,
+      "exact": false,
+      "passed": true,
+      "reference_sha256": "2c9f4eedef64814a52e9523d1cdbf7da1958ffc170637f7001a7e36faa7afa42",
+      "enabled_sha256": "95d4594c2f1e3fb0ff36dbcc67a00938d5f968d18d70ed00b3b79dd7cf0a063f"
+    },
+    {
+      "file": "checker/000000.png",
+      "max": 3.0518043793392844e-05,
+      "mae": 3.293957117711157e-07,
+      "exact": false,
+      "passed": true,
+      "reference_sha256": "7ebea631966aa4628048e5627efab72688e1076d52e0700c5b326960f0aba489",
+      "enabled_sha256": "f2822a186d5bef06592347db0d3a94615c5eacbd9f208f62e727c212ff192210"
+    },
+    {
+      "file": "cutout/000000.png",
+      "max": 1.5259021896696422e-05,
+      "mae": 6.535914337140217e-07,
+      "exact": false,
+      "passed": true,
+      "reference_sha256": "3ace40968ec0d8e278de0150846d93e071065f9ded4198134464092f54689d81",
+      "enabled_sha256": "0386c30fba4a54596e3ec1ccc87ecd8318afd160b6369191187875924875a6dc"
+    },
+    {
+      "file": "fg/000000.png",
+      "max": 1.5259021896696422e-05,
+      "mae": 6.535914337140217e-07,
+      "exact": false,
+      "passed": true,
+      "reference_sha256": "23f0feb2a3f4bbcdd0395691e826d8b6b494f089ab46c9373f35f8af22fd5378",
+      "enabled_sha256": "f3c3706cd41f308fe5c9aa7344c9d8887260f920e1c24184954d6832bd9003a3"
+    }
+  ]
+}

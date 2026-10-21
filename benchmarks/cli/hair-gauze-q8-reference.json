@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "precision": "q8",
+  "kernel_mode": "reference",
+  "input": "hair-gauze.png",
+  "frames": 1,
+  "native_hw": [
+    1024,
+    1536
+  ],
+  "profile_hw": [
+    1024,
+    1536
+  ],
+  "outputs": [
+    "alpha",
+    "fg",
+    "checker",
+    "cutout"
+  ],
+  "png": true,
+  "compile": true,
+  "hann_chunk": 4,
+  "hann_stride": 2,
+  "model_load_seconds": 1.8239337499253452,
+  "warmups": [
+    {
+      "seconds": 2.206110042054206,
+      "stage_seconds": {
+        "rvm": 0.04937062493991107,
+        "foundations": 0.1328207920305431,
+        "stage1": 0.40015274996403605,
+        "stage2": 1.050623207935132,
+        "render": 0.029119584010913968,
+        "write": 0.3962848340161145
+      },
+      "peak_physical_bytes": 3423816704
+    }
+  ],
+  "runs": [
+    {
+      "seconds": 2.0266636660089716,
+      "stage_seconds": {
+        "rvm": 0.014308833982795477,
+        "foundations": 0.1078606250230223,
+        "stage1": 0.37050233292393386,
+        "stage2": 1.0318053329829127,
+        "render": 0.016458375030197203,
+        "write": 0.3390257080318406
+      },
+      "peak_physical_bytes": 3399634016
+    },
+    {
+      "seconds": 2.034566416987218,
+      "stage_seconds": {
+        "rvm": 0.012984125060029328,
+        "foundations": 0.10109912510961294,
+        "stage1": 0.37036162498407066,
+        "stage2": 1.0432640418875962,
+        "render": 0.02284658409189433,
+        "write": 0.3383940840139985
+      },
+      "peak_physical_bytes": 3389164664
+    },
+    {
+      "seconds": 2.031302999937907,
+      "stage_seconds": {
+        "rvm": 0.014034207910299301,
+        "foundations": 0.10045399994123727,
+        "stage1": 0.3711444999789819,
+        "stage2": 1.0283892080187798,
+        "render": 0.02423454204108566,
+        "write": 0.340994416968897
+      },
+      "peak_physical_bytes": 3367472272
+    }
+  ],
+  "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+  "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+  "median_seconds": 2.031302999937907,
+  "peak_physical_bytes": 3399634016,
+  "case": "hair-gauze",
+  "cli_process_wall_seconds": 11.249072709004395,
+  "source_sha256": {
+    "corridorkey_mlx/__init__.py": "f8d66429d4d8349a31428a696a639b47e6fa8c230be6e9a6d164da37f8b6b3e4",
+    "corridorkey_mlx/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "corridorkey_mlx/benchmarking.py": "a34352df86c264eeee9e49b35515587202d991848bbb814be6471da48927a96c",
+    "corridorkey_mlx/cli.py": "c215f71ae813bb9443dbef03534793ccde72ff9ae88cf85703ab95ea81f79112",
+    "corridorkey_mlx/mlx_backend.py": "7bf795aceeadbf6b1e7fa553f5fed164abc46a803272fddfbc696ddd93c42cfb",
+    "corridorkey_mlx/mlx_graph.py": "ccbb2ef5a00658ddc9b3973c36d3eb8e18787007e56fc93f722cb9ea1e87b821",
+    "corridorkey_mlx/mlx_kernels.py": "788f080ff0524c8ea8dc532eb28c17acaa688c9d076d68c3e41bfe55720e675d",
+    "corridorkey_mlx/mlx_render.py": "21bc3996c1c4bb390dfaa41ff2ebfb19a7c8e34ba7c99f1de79f9eeac0aeff64",
+    "corridorkey_mlx/pipeline.py": "65418ac4128e11ba95fdadaac8c442f8a5728f86c5d1518c918d7c077310d5d8"
+  },
+  "input_sha256": "d78ce5d9f2432d1d0f2f212340adb3a65709f5c6edc67fa42ae5623286d9c054"
+}

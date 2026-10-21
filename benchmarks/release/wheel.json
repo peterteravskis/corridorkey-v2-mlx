@@ -1,0 +1,9 @@
+{
+  "wheel": "corridorkey_v2_mlx-0.1.0-py3-none-any.whl",
+  "sha256": "f822de6f11690a81a56e3a56d46dbc8d9f9dbbf34403f42aea6fb572515545ef",
+  "isolated_imports_passed": true,
+  "imports_upstream_package": false,
+  "apache_license_metadata": true,
+  "wheel_source_bytes_match": true,
+  "console_entry_point_verified": true
+}

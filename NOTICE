@@ -1,0 +1,37 @@
+CorridorKey v2 MLX
+Copyright 2026 Peter Teravskis
+
+The original MLX execution code, independent command-line pipeline, tests,
+and documentation in this source repository are licensed under Apache 2.0.
+
+CorridorKey 2.0 was designed and trained by Zachary Harris in collaboration
+with Niko Pueringer and Corridor Digital.
+Original source: https://github.com/nikopueringer/CorridorKey2.0
+Original model: https://huggingface.co/nikopueringer/CorridorKey2.0
+Official plugins: https://corridorkey.com
+
+This repository implements an independent inference runtime for converted
+models. It does not include upstream CorridorKey Python source or model
+weights. CorridorKey is the upstream project's name; attribution does not
+imply endorsement, affiliation, or a trademark license.
+
+MODEL LICENSE BOUNDARY
+Downloaded CorridorKey weights, exported model graphs, and model-derived
+assets are not licensed under this repository's Apache 2.0 license. They
+remain subject to the Corridor Key Licence 2.0 and applicable third-party
+terms. An Apache license for an inference engine grants no additional rights
+to model assets loaded by it.
+
+Foundation-model attribution:
+- NVIDIA C-RADIOv4-SO400M: NVIDIA Open Model License.
+  https://huggingface.co/nvidia/C-RADIOv4-SO400M
+  Licensed by NVIDIA Corporation under the NVIDIA Open Model License.
+- Microsoft / Ruicheng MoGe-2 ViT-B: MIT; identified DINOv2 source: Apache 2.0.
+  https://github.com/microsoft/MoGe
+  https://huggingface.co/Ruicheng/moge-2-vitb-normal
+- Google DeepMind RVM small: CC BY 4.0 weights; Apache 2.0 reference code.
+  https://github.com/google-deepmind/representations4d
+
+Apple MLX: https://github.com/ml-explore/mlx (MIT).
+PyTorch, NumPy, OpenCV, safetensors and FFmpeg retain their own licenses.
+They are installed separately; their binaries are not bundled here.

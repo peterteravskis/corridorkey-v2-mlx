@@ -1,0 +1,28 @@
+[
+  {
+    "precision": "fp16",
+    "frames": 6,
+    "outputs": 5,
+    "png_files": 30,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bit_depth": 16,
+    "passed": true,
+    "claim": "Inference and export smoke test, not FP32 numerical equivalence"
+  },
+  {
+    "precision": "q8",
+    "frames": 6,
+    "outputs": 5,
+    "png_files": 30,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bit_depth": 16,
+    "passed": true,
+    "claim": "Inference and export smoke test, not FP32 numerical equivalence"
+  }
+]

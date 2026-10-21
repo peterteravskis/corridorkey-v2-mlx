@@ -1,0 +1,36 @@
+{
+  "baseline_commit": "ce49c3e5d1edfb7b82289b858ec81bf1a1e0bf56",
+  "public_upstream_commit": "485f5e9ab759ead6138cc990776184b59d6ea971",
+  "upstream": "https://github.com/nikopueringer/CorridorKey2.0",
+  "scope": "Original MLX modules and independent CLI/pipeline; upstream source is not bundled",
+  "files": [
+    {
+      "source": "corridorkey/mlx_backend.py",
+      "source_sha256": "11af2a4a95da84604454605840cc3117ba0823eb7ef1354409fe213ee5b91c98",
+      "release": "corridorkey_mlx/mlx_backend.py",
+      "release_sha256": "7bf795aceeadbf6b1e7fa553f5fed164abc46a803272fddfbc696ddd93c42cfb",
+      "change": "Package namespace; Apache header; explicit graph-optimization option propagation for matched CLI benchmarks; neural mathematics unchanged"
+    },
+    {
+      "source": "corridorkey/mlx_graph.py",
+      "source_sha256": "8ee86e2ca1f910409e3c8d923255cf920366a7f3f8eb342cf9cb8d7ed2f13450",
+      "release": "corridorkey_mlx/mlx_graph.py",
+      "release_sha256": "ccbb2ef5a00658ddc9b3973c36d3eb8e18787007e56fc93f722cb9ea1e87b821",
+      "change": "Package namespace; Apache copyright/SPDX header; neural code unchanged"
+    },
+    {
+      "source": "corridorkey/mlx_kernels.py",
+      "source_sha256": "ebc2cef7b14bd2b3cf958c6f2741f1b37362ac48069361c07377987eb305f61d",
+      "release": "corridorkey_mlx/mlx_kernels.py",
+      "release_sha256": "788f080ff0524c8ea8dc532eb28c17acaa688c9d076d68c3e41bfe55720e675d",
+      "change": "Package namespace; Apache copyright/SPDX header; neural code unchanged"
+    },
+    {
+      "source": "corridorkey/mlx_render.py",
+      "source_sha256": "e2601c16e6882a33c6feb6f976a9d4c50fa0eb2fde748f1993cf0cb1e2e0cffe",
+      "release": "corridorkey_mlx/mlx_render.py",
+      "release_sha256": "21bc3996c1c4bb390dfaa41ff2ebfb19a7c8e34ba7c99f1de79f9eeac0aeff64",
+      "change": "Package namespace; Apache copyright/SPDX header; neural code unchanged"
+    }
+  ]
+}

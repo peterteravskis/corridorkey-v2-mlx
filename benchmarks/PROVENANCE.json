@@ -1,0 +1,149 @@
+[
+  {
+    "source": "evidence/review/mlx-mps-summary.json",
+    "source_sha256": "f8ad4b7db9820301670e134058f115833600d7a35dcdb70ed7cf456b8ddb5880",
+    "public_file": "benchmarks/baseline-summary.json",
+    "public_sha256": "4678e811d9579d28a8c130a7ace61642a7c7a5934f8419e00137db9cdb789a20",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/mlx-component-parity.json",
+    "source_sha256": "ae0ab5c4fcc12811b1b2af2c4a3633c5662fce26b845f569f9118b3946a319c9",
+    "public_file": "benchmarks/mlx-component-parity.json",
+    "public_sha256": "ae0ab5c4fcc12811b1b2af2c4a3633c5662fce26b845f569f9118b3946a319c9",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/ck2-dense-conv/results.json",
+    "source_sha256": "6dc976233f44e5738dc7246a4fd8f263c02ff36829c2571abe564bc15f00ceb0",
+    "public_file": "benchmarks/dense-conv-results.json",
+    "public_sha256": "b7151035dc6cc5ebeaa92dcbf2bdc6d1e505813d3d36935e953e894d1d4edeee",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/ck2-half-dense-conv/results.json",
+    "source_sha256": "fa301f9a01ba056b894b0e9349917cebe35dff6963de427f82c30017ea7b1d63",
+    "public_file": "benchmarks/half-dense-conv-results.json",
+    "public_sha256": "0efa9af96f779bedb63181ee60dc77b37ac8cb3820cf0d3d9c4b797a6a3e27cd",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/ck2-fp16/results.json",
+    "source_sha256": "c2e1491c3a1ba828d884e11dac9e2d87118b0304d6ac7d2d4881c7d981d87d71",
+    "public_file": "benchmarks/fp16-results.json",
+    "public_sha256": "c2e1491c3a1ba828d884e11dac9e2d87118b0304d6ac7d2d4881c7d981d87d71",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/ck2-q8/results.json",
+    "source_sha256": "166bdaa13a6e2fddf212eac12df30bf4ab6c7bfe1a55c518aa228540764823f0",
+    "public_file": "benchmarks/q8-results.json",
+    "public_sha256": "166bdaa13a6e2fddf212eac12df30bf4ab6c7bfe1a55c518aa228540764823f0",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/physical-footprint-mps.json",
+    "source_sha256": "ad03de686c36eb9358011ca46ac32e1a3cb1b1b3e8f4f70c8fe34e3a07df8799",
+    "public_file": "benchmarks/physical-footprint-mps.json",
+    "public_sha256": "ad03de686c36eb9358011ca46ac32e1a3cb1b1b3e8f4f70c8fe34e3a07df8799",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/physical-footprint-mlx.json",
+    "source_sha256": "c5163af3ce153f2861daec52f357ac288a5628eb7583d2064feeafc8bcccc7b7",
+    "public_file": "benchmarks/physical-footprint-mlx.json",
+    "public_sha256": "c5163af3ce153f2861daec52f357ac288a5628eb7583d2064feeafc8bcccc7b7",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/video-six-mlx-0.json",
+    "source_sha256": "104b9600a622ca9faa95982710a8b33e638d6c23c0ad13736f5c3d735d09d884",
+    "public_file": "benchmarks/video-six-mlx-0.json",
+    "public_sha256": "74a0d0763845b86e5d707b9c4c6b3e9432c51058f04cd52c3ba4eb67c83285cd",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/hair-gauze-mlx-1.json",
+    "source_sha256": "ba5c100b3fe911702c3a6897c59cb06b25c86dd6e830337105e3a17d75cd87ce",
+    "public_file": "benchmarks/hair-gauze-mlx-1.json",
+    "public_sha256": "0e782199354ad00d49b114f850bb4b91e1bb67b69aa69c8cf8e8abd1e7980629",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/hair-gauze-mlx-0.json",
+    "source_sha256": "73e4d68caa2cbb8c433e44ff5f27b0308cf8b2212d1324c93e39d17ad2b1d02b",
+    "public_file": "benchmarks/hair-gauze-mlx-0.json",
+    "public_sha256": "b14d4ecf76d3f48bb0e6da2e0d56c05e1bb2ccb56a2591db02e0780941299209",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/fur-motion-mps-1.json",
+    "source_sha256": "4e79b0552aa691ec8d31f68a9824c65279d591e527b8412fa20ef6f1a33b29ac",
+    "public_file": "benchmarks/fur-motion-mps-1.json",
+    "public_sha256": "2ecc72928ca3a157b51ce741fb289d7f095cee4e4e81c917497b6b9bbca13e9c",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/fur-motion-mps-0.json",
+    "source_sha256": "6cd3bf326808504a5039fd305e92c9bb356e5563862380def535442845bc2fbb",
+    "public_file": "benchmarks/fur-motion-mps-0.json",
+    "public_sha256": "9d7cf1c7cdc3f185546940b0954daebab4e62183b0727b7447d76f8f82d0a698",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/fur-motion-mlx-1.json",
+    "source_sha256": "ded1df6c3e3b50f4a2d0dbea6a228f132dbea0d4d4bc284b82b6b18179d684e2",
+    "public_file": "benchmarks/fur-motion-mlx-1.json",
+    "public_sha256": "c0411844c24652bc82c2541c784a7e0bdcd6d8add81ffd3c6718f94587796370",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/fur-motion-mlx-0.json",
+    "source_sha256": "195dd44bf363534a81aa8932ea104c7b5443ba9b8598ada8967074653f1d7a53",
+    "public_file": "benchmarks/fur-motion-mlx-0.json",
+    "public_sha256": "cb6879cc96bf405f588cf2672975efdfc26c28ec4cc8a78e24b1eb14a601f60d",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/hair-gauze-mps-1.json",
+    "source_sha256": "0807b09b369e362b09d898792a78b2969fc88b7adc7ffaa6ddb188de842a033e",
+    "public_file": "benchmarks/hair-gauze-mps-1.json",
+    "public_sha256": "b13987a686a550fd4df9eb9042b36525b8346a6c7151e89e8979bbfacc66d78b",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/video-six-mps-0.json",
+    "source_sha256": "3a4f6be768214b00bbc5874d1915ace3e50c7d51a1504021965869fb01d49b00",
+    "public_file": "benchmarks/video-six-mps-0.json",
+    "public_sha256": "95d2deaff3e99fce18798bb202f30ec41744a306dafd883b2349b1b9343e6558",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/benchmarks/mlx-mps/hair-gauze-mps-0.json",
+    "source_sha256": "c1d6a271b4b097503e4d6833c74f34523353e0964c042111f69032a1d39f9298",
+    "public_file": "benchmarks/hair-gauze-mps-0.json",
+    "public_sha256": "38fdb30aa19ca229bf860b20a96f9c923a80d5fa57b837c4922e1075110e9751",
+    "transform": "Machine paths generalized; numeric values and recorded hashes unchanged"
+  },
+  {
+    "source": "evidence/ck2-kernels/isolated-kernels.json",
+    "source_sha256": "c7ea2f0f6f62b7f719fd57f84253950ebb6382cc005b5a77f191b4ffa74bc73b",
+    "public_file": "benchmarks/isolated-kernels.json",
+    "public_sha256": "c7ea2f0f6f62b7f719fd57f84253950ebb6382cc005b5a77f191b4ffa74bc73b",
+    "transform": "None; byte-identical measurement record"
+  },
+  {
+    "source": "evidence/ck2-dense-conv/channel-conv.json",
+    "source_sha256": "dd912b4c45ce6c5abfd0f18448cfd4a5bdf89bbaddc171ce2c243b19f4d1d4c5",
+    "public_file": "benchmarks/channel-conv.json",
+    "public_sha256": "dd912b4c45ce6c5abfd0f18448cfd4a5bdf89bbaddc171ce2c243b19f4d1d4c5",
+    "transform": "None; byte-identical measurement record"
+  },
+  {
+    "source": "evidence/ck2-half-dense-conv/operator-screen.json",
+    "source_sha256": "fa1b7cb5960c4b024be1725f0f070146c69541d6d45c4be157383f3240171d73",
+    "public_file": "benchmarks/half-operator-screen.json",
+    "public_sha256": "fa1b7cb5960c4b024be1725f0f070146c69541d6d45c4be157383f3240171d73",
+    "transform": "None; byte-identical measurement record"
+  }
+]

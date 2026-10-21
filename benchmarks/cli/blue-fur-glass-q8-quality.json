@@ -1,0 +1,46 @@
+{
+  "case": "blue-fur-glass",
+  "precision": "q8",
+  "outputs": 4,
+  "all_exact": true,
+  "passed": true,
+  "worst_max": 0.0,
+  "rows": [
+    {
+      "file": "alpha/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "cf9ac39f7cbd545783139be3219b5a536e9f216fca009717271dfa47cf54a249",
+      "enabled_sha256": "cf9ac39f7cbd545783139be3219b5a536e9f216fca009717271dfa47cf54a249"
+    },
+    {
+      "file": "checker/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "305d40e072e9c88b1f49979c7973338966c2239f81ab01b384fb1c9787c1fefe",
+      "enabled_sha256": "305d40e072e9c88b1f49979c7973338966c2239f81ab01b384fb1c9787c1fefe"
+    },
+    {
+      "file": "cutout/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "910d537e14a6615356ea91c490d03803febb20dfae44202e9b9dc15df9cad0b0",
+      "enabled_sha256": "910d537e14a6615356ea91c490d03803febb20dfae44202e9b9dc15df9cad0b0"
+    },
+    {
+      "file": "fg/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "75b8b9f761fb3dbc2945a85e28aa29b8c1fdbda64cdd219be140fea0ce57bcf7",
+      "enabled_sha256": "75b8b9f761fb3dbc2945a85e28aa29b8c1fdbda64cdd219be140fea0ce57bcf7"
+    }
+  ]
+}

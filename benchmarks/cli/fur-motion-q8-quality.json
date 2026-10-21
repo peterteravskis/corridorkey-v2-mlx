@@ -1,0 +1,46 @@
+{
+  "case": "fur-motion",
+  "precision": "q8",
+  "outputs": 4,
+  "all_exact": true,
+  "passed": true,
+  "worst_max": 0.0,
+  "rows": [
+    {
+      "file": "alpha/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "d2edb30e4f159ffc0e15da5fbb99073a98dad91458b26fcc212f534b5aa7536e",
+      "enabled_sha256": "d2edb30e4f159ffc0e15da5fbb99073a98dad91458b26fcc212f534b5aa7536e"
+    },
+    {
+      "file": "checker/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "22ac8507d36666273a1903b280bc7c7814f247a4f3a428a442702023071e255c",
+      "enabled_sha256": "22ac8507d36666273a1903b280bc7c7814f247a4f3a428a442702023071e255c"
+    },
+    {
+      "file": "cutout/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "e38575591bd43b349c36c22639b0acb17b431c576718cbf2a1f481a13da82b72",
+      "enabled_sha256": "e38575591bd43b349c36c22639b0acb17b431c576718cbf2a1f481a13da82b72"
+    },
+    {
+      "file": "fg/000000.png",
+      "max": 0.0,
+      "mae": 0.0,
+      "exact": true,
+      "passed": true,
+      "reference_sha256": "61e3eac5080968557fea5308d8dee7f961ad4efc3fe2da508360d940b6c7494f",
+      "enabled_sha256": "61e3eac5080968557fea5308d8dee7f961ad4efc3fe2da508360d940b6c7494f"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "limits": {
+    "relative_rms": 2e-05,
+    "max_over_reference_peak": 0.0002
+  },
+  "components": {
+    "rvm": [
+      {
+        "mae": 3.883714228758748e-06,
+        "max": 0.00036203861236572266,
+        "relative_rms": 5.678330022926807e-06,
+        "max_over_reference_peak": 3.950393977981438e-05,
+        "passed": true
+      },
+      {
+        "mae": 3.874467845452525e-06,
+        "max": 0.00036203861236572266,
+        "relative_rms": 5.672706855792248e-06,
+        "max_over_reference_peak": 2.854742289996246e-05,
+        "passed": true
+      }
+    ],
+    "foundations": [
+      {
+        "mae": 2.251830662230845e-06,
+        "max": 4.344433546066284e-05,
+        "relative_rms": 2.8165498068077773e-06,
+        "max_over_reference_peak": 1.8217412462643151e-06,
+        "passed": true
+      },
+      {
+        "mae": 5.775562530224863e-06,
+        "max": 0.00042766332626342773,
+        "relative_rms": 1.068565146115815e-05,
+        "max_over_reference_peak": 8.826436943934472e-05,
+        "passed": true
+      }
+    ],
+    "stage1": [
+      {
+        "mae": 3.972741429899192e-07,
+        "max": 1.0251998901367188e-05,
+        "relative_rms": 1.1518748906839733e-06,
+        "max_over_reference_peak": 2.623348952630981e-06,
+        "passed": true
+      },
+      {
+        "mae": 2.391831337433814e-07,
+        "max": 7.361173629760742e-06,
+        "relative_rms": 9.517026067218184e-07,
+        "max_over_reference_peak": 6.8399407345442815e-06,
+        "passed": true
+      }
+    ],
+    "stage2": [
+      {
+        "mae": 2.765249079346906e-07,
+        "max": 7.033348083496094e-06,
+        "relative_rms": 1.1996210869184818e-06,
+        "max_over_reference_peak": 6.433644427302598e-06,
+        "passed": true
+      }
+    ]
+  },
+  "passed": true
+}

@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "precision": "fp32",
+  "kernel_mode": "reference",
+  "input": "moving-32.mp4",
+  "frames": 32,
+  "native_hw": [
+    720,
+    1280
+  ],
+  "profile_hw": [
+    768,
+    1280
+  ],
+  "outputs": [
+    "alpha",
+    "fg",
+    "checker",
+    "cutout"
+  ],
+  "png": true,
+  "compile": true,
+  "hann_chunk": 4,
+  "hann_stride": 2,
+  "model_load_seconds": 5.245251292013563,
+  "warmups": [
+    {
+      "seconds": 50.87823999999091,
+      "stage_seconds": {
+        "rvm": 0.3242960849311203,
+        "foundations": 2.166952336556278,
+        "stage1": 17.580560041824356,
+        "stage2": 23.054758753045462,
+        "render": 0.4620747029548511,
+        "write": 5.001187164685689
+      },
+      "peak_physical_bytes": 8011667240
+    }
+  ],
+  "runs": [
+    {
+      "seconds": 50.46506750001572,
+      "stage_seconds": {
+        "rvm": 0.29324379086028785,
+        "foundations": 2.194523241603747,
+        "stage1": 17.12569712579716,
+        "stage2": 23.33773662324529,
+        "render": 0.40306170703843236,
+        "write": 4.794543290743604
+      },
+      "peak_physical_bytes": 7890737080
+    },
+    {
+      "seconds": 49.90404358296655,
+      "stage_seconds": {
+        "rvm": 0.2894291706616059,
+        "foundations": 2.1409393737558275,
+        "stage1": 16.951685041887686,
+        "stage2": 23.006812377949245,
+        "render": 0.443521581008099,
+        "write": 4.7998717919690534
+      },
+      "peak_physical_bytes": 7886641152
+    },
+    {
+      "seconds": 51.673663416993804,
+      "stage_seconds": {
+        "rvm": 0.29770695592742413,
+        "foundations": 2.248882210231386,
+        "stage1": 17.778417915222235,
+        "stage2": 24.02794925204944,
+        "render": 0.42532737308647484,
+        "write": 4.58103662438225
+      },
+      "peak_physical_bytes": 7896717288
+    }
+  ],
+  "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+  "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+  "median_seconds": 50.46506750001572,
+  "peak_physical_bytes": 7896717288,
+  "case": "moving-32",
+  "cli_process_wall_seconds": 209.42043791594915,
+  "source_sha256": {
+    "corridorkey_mlx/__init__.py": "f8d66429d4d8349a31428a696a639b47e6fa8c230be6e9a6d164da37f8b6b3e4",
+    "corridorkey_mlx/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "corridorkey_mlx/benchmarking.py": "a34352df86c264eeee9e49b35515587202d991848bbb814be6471da48927a96c",
+    "corridorkey_mlx/cli.py": "c215f71ae813bb9443dbef03534793ccde72ff9ae88cf85703ab95ea81f79112",
+    "corridorkey_mlx/mlx_backend.py": "7bf795aceeadbf6b1e7fa553f5fed164abc46a803272fddfbc696ddd93c42cfb",
+    "corridorkey_mlx/mlx_graph.py": "ccbb2ef5a00658ddc9b3973c36d3eb8e18787007e56fc93f722cb9ea1e87b821",
+    "corridorkey_mlx/mlx_kernels.py": "788f080ff0524c8ea8dc532eb28c17acaa688c9d076d68c3e41bfe55720e675d",
+    "corridorkey_mlx/mlx_render.py": "21bc3996c1c4bb390dfaa41ff2ebfb19a7c8e34ba7c99f1de79f9eeac0aeff64",
+    "corridorkey_mlx/pipeline.py": "65418ac4128e11ba95fdadaac8c442f8a5728f86c5d1518c918d7c077310d5d8"
+  },
+  "input_sha256": "62b3850ec0146ffca14cdbc49b14ff85908832ba86259b7ad560d5c9102d0cb0"
+}

@@ -1,0 +1,52 @@
+{
+  "alpha": {
+    "shape": [
+      1024,
+      1536,
+      3
+    ],
+    "max_code_difference": 0,
+    "mae_code": 0.0,
+    "exact": true
+  },
+  "fg": {
+    "shape": [
+      1024,
+      1536,
+      3
+    ],
+    "max_code_difference": 0,
+    "mae_code": 0.0,
+    "exact": true
+  },
+  "raw_fg": {
+    "shape": [
+      1024,
+      1536,
+      3
+    ],
+    "max_code_difference": 0,
+    "mae_code": 0.0,
+    "exact": true
+  },
+  "checker": {
+    "shape": [
+      1024,
+      1536,
+      3
+    ],
+    "max_code_difference": 0,
+    "mae_code": 0.0,
+    "exact": true
+  },
+  "cutout": {
+    "shape": [
+      1024,
+      1536,
+      4
+    ],
+    "max_code_difference": 0,
+    "mae_code": 0.0,
+    "exact": true
+  }
+}

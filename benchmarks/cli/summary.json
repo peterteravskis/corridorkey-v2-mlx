@@ -1,0 +1,2715 @@
+{
+  "hardware": "Apple M4 Pro",
+  "memory_bytes": 51539607552,
+  "study_date": "2026-10-20",
+  "source_sha256": {
+    "corridorkey_mlx/__init__.py": "f8d66429d4d8349a31428a696a639b47e6fa8c230be6e9a6d164da37f8b6b3e4",
+    "corridorkey_mlx/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "corridorkey_mlx/benchmarking.py": "a34352df86c264eeee9e49b35515587202d991848bbb814be6471da48927a96c",
+    "corridorkey_mlx/cli.py": "c215f71ae813bb9443dbef03534793ccde72ff9ae88cf85703ab95ea81f79112",
+    "corridorkey_mlx/mlx_backend.py": "7bf795aceeadbf6b1e7fa553f5fed164abc46a803272fddfbc696ddd93c42cfb",
+    "corridorkey_mlx/mlx_graph.py": "ccbb2ef5a00658ddc9b3973c36d3eb8e18787007e56fc93f722cb9ea1e87b821",
+    "corridorkey_mlx/mlx_kernels.py": "788f080ff0524c8ea8dc532eb28c17acaa688c9d076d68c3e41bfe55720e675d",
+    "corridorkey_mlx/mlx_render.py": "21bc3996c1c4bb390dfaa41ff2ebfb19a7c8e34ba7c99f1de79f9eeac0aeff64",
+    "corridorkey_mlx/pipeline.py": "65418ac4128e11ba95fdadaac8c442f8a5728f86c5d1518c918d7c077310d5d8"
+  },
+  "conditions": [
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "reference",
+      "input": "fur-motion.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.3654042499838397,
+      "warmups": [
+        {
+          "seconds": 2.2939468750264496,
+          "stage_seconds": {
+            "rvm": 0.04133791697677225,
+            "foundations": 0.1470821670955047,
+            "stage1": 0.45818258298095316,
+            "stage2": 1.1635136250406504,
+            "render": 0.02562474994920194,
+            "write": 0.30888320796657354
+          },
+          "peak_physical_bytes": 7756600840
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.116434625000693,
+          "stage_seconds": {
+            "rvm": 0.021036499994806945,
+            "foundations": 0.11487808404490352,
+            "stage1": 0.43541329202707857,
+            "stage2": 1.1515156670939177,
+            "render": 0.016877040965482593,
+            "write": 0.22082370799034834
+          },
+          "peak_physical_bytes": 7701255760
+        },
+        {
+          "seconds": 2.126605874975212,
+          "stage_seconds": {
+            "rvm": 0.02518312493339181,
+            "foundations": 0.11234020895790309,
+            "stage1": 0.4281422079075128,
+            "stage2": 1.1598970000632107,
+            "render": 0.022834125091321766,
+            "write": 0.23437237506732345
+          },
+          "peak_physical_bytes": 7735400040
+        },
+        {
+          "seconds": 2.1168076670728624,
+          "stage_seconds": {
+            "rvm": 0.022684917086735368,
+            "foundations": 0.11718525004107505,
+            "stage1": 0.4310288750566542,
+            "stage2": 1.1509785410016775,
+            "render": 0.0250296660233289,
+            "write": 0.234491707989946
+          },
+          "peak_physical_bytes": 7737464448
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 2.1168076670728624,
+      "peak_physical_bytes": 7737464448,
+      "case": "fur-motion",
+      "cli_process_wall_seconds": 10.214453333988786,
+      "input_sha256": "0a721e992526212122e118c794d9f6e2476165b1164571a69a08a55c4cb41197"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "enabled",
+      "input": "fur-motion.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.23318820795975626,
+      "warmups": [
+        {
+          "seconds": 1.864296832936816,
+          "stage_seconds": {
+            "rvm": 0.04604633303824812,
+            "foundations": 0.14378441590815783,
+            "stage1": 0.3700702920323238,
+            "stage2": 0.8507194999838248,
+            "render": 0.027845249976962805,
+            "write": 0.28299433400388807
+          },
+          "peak_physical_bytes": 7547343624
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.707402667030692,
+          "stage_seconds": {
+            "rvm": 0.018979959073476493,
+            "foundations": 0.11934104200918227,
+            "stage1": 0.34021145896986127,
+            "stage2": 0.8461211250396445,
+            "render": 0.01599250000435859,
+            "write": 0.22739075007848442
+          },
+          "peak_physical_bytes": 7508677456
+        },
+        {
+          "seconds": 1.7061168750515208,
+          "stage_seconds": {
+            "rvm": 0.01909495797008276,
+            "foundations": 0.12031087500508875,
+            "stage1": 0.34496137499809265,
+            "stage2": 0.8109684579540044,
+            "render": 0.021230083075352013,
+            "write": 0.2507944169919938
+          },
+          "peak_physical_bytes": 7498978128
+        },
+        {
+          "seconds": 1.67612449999433,
+          "stage_seconds": {
+            "rvm": 0.02023600006941706,
+            "foundations": 0.1123349160188809,
+            "stage1": 0.3454545419663191,
+            "stage2": 0.8076535409782082,
+            "render": 0.021776083041913807,
+            "write": 0.23058579198550433
+          },
+          "peak_physical_bytes": 7479071568
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.7061168750515208,
+      "peak_physical_bytes": 7508677456,
+      "case": "fur-motion",
+      "cli_process_wall_seconds": 8.383255249937065,
+      "input_sha256": "0a721e992526212122e118c794d9f6e2476165b1164571a69a08a55c4cb41197"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "enabled",
+      "input": "fur-motion.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 2.708006375003606,
+      "warmups": [
+        {
+          "seconds": 2.175223207916133,
+          "stage_seconds": {
+            "rvm": 0.05179741606116295,
+            "foundations": 0.13398741593118757,
+            "stage1": 0.6504642079817131,
+            "stage2": 0.8652617499465123,
+            "render": 0.03567866701632738,
+            "write": 0.29803145804908127
+          },
+          "peak_physical_bytes": 4301688408
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.6657706249970943,
+          "stage_seconds": {
+            "rvm": 0.012385583017021418,
+            "foundations": 0.09942887490615249,
+            "stage1": 0.29057070810813457,
+            "stage2": 0.8599636250874028,
+            "render": 0.021464291960000992,
+            "write": 0.2419391250004992
+          },
+          "peak_physical_bytes": 4260875984
+        },
+        {
+          "seconds": 1.6502440420445055,
+          "stage_seconds": {
+            "rvm": 0.01162379200104624,
+            "foundations": 0.09806158300489187,
+            "stage1": 0.28404508298262954,
+            "stage2": 0.8506092090392485,
+            "render": 0.02223375008907169,
+            "write": 0.23879091697745025
+          },
+          "peak_physical_bytes": 4250128080
+        },
+        {
+          "seconds": 1.6579810839612037,
+          "stage_seconds": {
+            "rvm": 0.01157016702927649,
+            "foundations": 0.0988736660219729,
+            "stage1": 0.28819616709370166,
+            "stage2": 0.8499549590051174,
+            "render": 0.023208749946206808,
+            "write": 0.23922062502242625
+          },
+          "peak_physical_bytes": 4260499128
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.6579810839612037,
+      "peak_physical_bytes": 4260875984,
+      "case": "fur-motion",
+      "cli_process_wall_seconds": 11.021928125061095,
+      "input_sha256": "0a721e992526212122e118c794d9f6e2476165b1164571a69a08a55c4cb41197"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "reference",
+      "input": "fur-motion.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.11006900004576892,
+      "warmups": [
+        {
+          "seconds": 2.0618067500181496,
+          "stage_seconds": {
+            "rvm": 0.04847049992531538,
+            "foundations": 0.12833049998153,
+            "stage1": 0.3953012080164626,
+            "stage2": 1.0125420830445364,
+            "render": 0.03142895794007927,
+            "write": 0.3038027919828892
+          },
+          "peak_physical_bytes": 4303146608
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.86286333296448,
+          "stage_seconds": {
+            "rvm": 0.01219991606194526,
+            "foundations": 0.09842499997466803,
+            "stage1": 0.3626801249338314,
+            "stage2": 0.984034041990526,
+            "render": 0.022969957906752825,
+            "write": 0.24059800000395626
+          },
+          "peak_physical_bytes": 4300656312
+        },
+        {
+          "seconds": 1.862339916988276,
+          "stage_seconds": {
+            "rvm": 0.011760334018617868,
+            "foundations": 0.09886166709475219,
+            "stage1": 0.3628213331103325,
+            "stage2": 1.0003340420080349,
+            "render": 0.01627562497742474,
+            "write": 0.22937462502159178
+          },
+          "peak_physical_bytes": 4257648288
+        },
+        {
+          "seconds": 1.8357216661097482,
+          "stage_seconds": {
+            "rvm": 0.011698249960318208,
+            "foundations": 0.10054775001481175,
+            "stage1": 0.36044154199771583,
+            "stage2": 0.9842002090299502,
+            "render": 0.01420174993108958,
+            "write": 0.22752249997574836
+          },
+          "peak_physical_bytes": 4255420088
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.862339916988276,
+      "peak_physical_bytes": 4300656312,
+      "case": "fur-motion",
+      "cli_process_wall_seconds": 8.786721625016071,
+      "input_sha256": "0a721e992526212122e118c794d9f6e2476165b1164571a69a08a55c4cb41197"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "reference",
+      "input": "fur-motion.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 1.8299659170443192,
+      "warmups": [
+        {
+          "seconds": 2.214896332938224,
+          "stage_seconds": {
+            "rvm": 0.0403637079289183,
+            "foundations": 0.13582033291459084,
+            "stage1": 0.4572979159420356,
+            "stage2": 1.0605281250318512,
+            "render": 0.030077500035986304,
+            "write": 0.35323479201179
+          },
+          "peak_physical_bytes": 3420851248
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.9920301670208573,
+          "stage_seconds": {
+            "rvm": 0.014267083955928683,
+            "foundations": 0.1035366669530049,
+            "stage1": 0.37715120892971754,
+            "stage2": 1.045302041922696,
+            "render": 0.015740958973765373,
+            "write": 0.29467512504197657
+          },
+          "peak_physical_bytes": 3372616848
+        },
+        {
+          "seconds": 1.9779740419471636,
+          "stage_seconds": {
+            "rvm": 0.012719833990558982,
+            "foundations": 0.09712829196359962,
+            "stage1": 0.37107887491583824,
+            "stage2": 1.0311417499324307,
+            "render": 0.02663512493018061,
+            "write": 0.29816812509670854
+          },
+          "peak_physical_bytes": 3355102352
+        },
+        {
+          "seconds": 2.011407833080739,
+          "stage_seconds": {
+            "rvm": 0.013090624939650297,
+            "foundations": 0.09884350001811981,
+            "stage1": 0.3716515420237556,
+            "stage2": 1.0424266250338405,
+            "render": 0.02539491606876254,
+            "write": 0.30842895805835724
+          },
+          "peak_physical_bytes": 3378728056
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.9920301670208573,
+      "peak_physical_bytes": 3378728056,
+      "case": "fur-motion",
+      "cli_process_wall_seconds": 11.229888542089611,
+      "input_sha256": "0a721e992526212122e118c794d9f6e2476165b1164571a69a08a55c4cb41197"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "enabled",
+      "input": "fur-motion.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.088846042053774,
+      "warmups": [
+        {
+          "seconds": 1.9632976669818163,
+          "stage_seconds": {
+            "rvm": 0.05297424993477762,
+            "foundations": 0.13606479193549603,
+            "stage1": 0.3295124579453841,
+            "stage2": 0.9258380419341847,
+            "render": 0.022457499988377094,
+            "write": 0.3460347088985145
+          },
+          "peak_physical_bytes": 3387837440
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.7708113749977201,
+          "stage_seconds": {
+            "rvm": 0.01366275001782924,
+            "foundations": 0.10014437499921769,
+            "stage1": 0.2961399160558358,
+            "stage2": 0.8977266249712557,
+            "render": 0.015863041975535452,
+            "write": 0.29572599998209625
+          },
+          "peak_physical_bytes": 3376204920
+        },
+        {
+          "seconds": 1.7868848749203607,
+          "stage_seconds": {
+            "rvm": 0.012665416928939521,
+            "foundations": 0.0999731250340119,
+            "stage1": 0.30144925008062273,
+            "stage2": 0.8951360000064597,
+            "render": 0.017649500048719347,
+            "write": 0.3033287499565631
+          },
+          "peak_physical_bytes": 3340143784
+        },
+        {
+          "seconds": 1.794661333085969,
+          "stage_seconds": {
+            "rvm": 0.013225040980614722,
+            "foundations": 0.09939095797017217,
+            "stage1": 0.2927562919212505,
+            "stage2": 0.9277717920485884,
+            "render": 0.01669166691135615,
+            "write": 0.2997789579676464
+          },
+          "peak_physical_bytes": 3332623528
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.7868848749203607,
+      "peak_physical_bytes": 3376204920,
+      "case": "fur-motion",
+      "cli_process_wall_seconds": 8.56259216601029,
+      "input_sha256": "0a721e992526212122e118c794d9f6e2476165b1164571a69a08a55c4cb41197"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "enabled",
+      "input": "blue-hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.1102024579886347,
+      "warmups": [
+        {
+          "seconds": 1.9879077919758856,
+          "stage_seconds": {
+            "rvm": 0.049161250004544854,
+            "foundations": 0.13290937501005828,
+            "stage1": 0.3208785419119522,
+            "stage2": 0.886373957968317,
+            "render": 0.028056791983544827,
+            "write": 0.42573016602545977
+          },
+          "peak_physical_bytes": 4279553720
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.8443899999838322,
+          "stage_seconds": {
+            "rvm": 0.015030791983008385,
+            "foundations": 0.11588945798575878,
+            "stage1": 0.28929054201580584,
+            "stage2": 0.8787594580790028,
+            "render": 0.0225802919594571,
+            "write": 0.3644464580575004
+          },
+          "peak_physical_bytes": 4279701224
+        },
+        {
+          "seconds": 1.8331560830119997,
+          "stage_seconds": {
+            "rvm": 0.013191416976042092,
+            "foundations": 0.10396774997934699,
+            "stage1": 0.2937411250313744,
+            "stage2": 0.8822570410557091,
+            "render": 0.020616459078155458,
+            "write": 0.35244658298324794
+          },
+          "peak_physical_bytes": 4194766568
+        },
+        {
+          "seconds": 2.1089739580638707,
+          "stage_seconds": {
+            "rvm": 0.013594000018201768,
+            "foundations": 0.10298191697802395,
+            "stage1": 0.29429179104045033,
+            "stage2": 0.8785172500647604,
+            "render": 0.01788041600957513,
+            "write": 0.646463125012815
+          },
+          "peak_physical_bytes": 4247604968
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.8443899999838322,
+      "peak_physical_bytes": 4279701224,
+      "case": "blue-hair-gauze",
+      "cli_process_wall_seconds": 9.432006041985005,
+      "input_sha256": "ef1e5b6a1daf2e29db36f0e03e5ed9b79966f4eedbafff6af6cf9e2a4f6e078e"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "reference",
+      "input": "blue-hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.11141187499742955,
+      "warmups": [
+        {
+          "seconds": 2.216481333016418,
+          "stage_seconds": {
+            "rvm": 0.04932533297687769,
+            "foundations": 0.1369913750095293,
+            "stage1": 0.4063988330308348,
+            "stage2": 1.0111487919930369,
+            "render": 0.026600875076837838,
+            "write": 0.43147891596890986
+          },
+          "peak_physical_bytes": 4301426336
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.053068708977662,
+          "stage_seconds": {
+            "rvm": 0.015349291963502765,
+            "foundations": 0.12055749993305653,
+            "stage1": 0.3692598750349134,
+            "stage2": 1.030150374979712,
+            "render": 0.017917666933499277,
+            "write": 0.3513434589840472
+          },
+          "peak_physical_bytes": 4300328704
+        },
+        {
+          "seconds": 2.013924958067946,
+          "stage_seconds": {
+            "rvm": 0.012419458013027906,
+            "foundations": 0.10104387497995049,
+            "stage1": 0.3782880409853533,
+            "stage2": 1.006286041927524,
+            "render": 0.01696908299345523,
+            "write": 0.34723041590768844
+          },
+          "peak_physical_bytes": 4282076952
+        },
+        {
+          "seconds": 2.060884582926519,
+          "stage_seconds": {
+            "rvm": 0.01312775001861155,
+            "foundations": 0.10176733299158514,
+            "stage1": 0.36591212498024106,
+            "stage2": 1.0266884170705453,
+            "render": 0.01809650007635355,
+            "write": 0.3609242079546675
+          },
+          "peak_physical_bytes": 4254797592
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 2.053068708977662,
+      "peak_physical_bytes": 4300328704,
+      "case": "blue-hair-gauze",
+      "cli_process_wall_seconds": 9.601670374977402,
+      "input_sha256": "ef1e5b6a1daf2e29db36f0e03e5ed9b79966f4eedbafff6af6cf9e2a4f6e078e"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "reference",
+      "input": "blue-hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.08776845794636756,
+      "warmups": [
+        {
+          "seconds": 2.3080031250137836,
+          "stage_seconds": {
+            "rvm": 0.04848691599909216,
+            "foundations": 0.12469187506940216,
+            "stage1": 0.4154763330006972,
+            "stage2": 1.0831199580570683,
+            "render": 0.030161833972670138,
+            "write": 0.4486327919876203
+          },
+          "peak_physical_bytes": 3436039240
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.123094292008318,
+          "stage_seconds": {
+            "rvm": 0.017626916989684105,
+            "foundations": 0.1226422080071643,
+            "stage1": 0.3775788339553401,
+            "stage2": 1.057737624971196,
+            "render": 0.01871012500487268,
+            "write": 0.36909737496171147
+          },
+          "peak_physical_bytes": 3393440984
+        },
+        {
+          "seconds": 2.10283587500453,
+          "stage_seconds": {
+            "rvm": 0.013152875006198883,
+            "foundations": 0.1028483749832958,
+            "stage1": 0.38344341702759266,
+            "stage2": 1.062411000020802,
+            "render": 0.023619291023351252,
+            "write": 0.362191625055857
+          },
+          "peak_physical_bytes": 3384659160
+        },
+        {
+          "seconds": 2.099538999958895,
+          "stage_seconds": {
+            "rvm": 0.013629917055368423,
+            "foundations": 0.1033719580154866,
+            "stage1": 0.38063274999149144,
+            "stage2": 1.0634914169786498,
+            "render": 0.022661083028651774,
+            "write": 0.365073167020455
+          },
+          "peak_physical_bytes": 3382578416
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 2.10283587500453,
+      "peak_physical_bytes": 3393440984,
+      "case": "blue-hair-gauze",
+      "cli_process_wall_seconds": 9.815483124926686,
+      "input_sha256": "ef1e5b6a1daf2e29db36f0e03e5ed9b79966f4eedbafff6af6cf9e2a4f6e078e"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "enabled",
+      "input": "blue-hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.09151900000870228,
+      "warmups": [
+        {
+          "seconds": 2.3637448330409825,
+          "stage_seconds": {
+            "rvm": 0.0529017080552876,
+            "foundations": 0.13450845796614885,
+            "stage1": 0.3381939160171896,
+            "stage2": 0.9120440420228988,
+            "render": 0.03644329204689711,
+            "write": 0.4079272079980001
+          },
+          "peak_physical_bytes": 3364899864
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.8354259170591831,
+          "stage_seconds": {
+            "rvm": 0.01564258406870067,
+            "foundations": 0.1112771249609068,
+            "stage1": 0.29581099993083626,
+            "stage2": 0.8930551670491695,
+            "render": 0.01974479202181101,
+            "write": 0.35520587500650436
+          },
+          "peak_physical_bytes": 3367521376
+        },
+        {
+          "seconds": 1.836676917038858,
+          "stage_seconds": {
+            "rvm": 0.015361041994765401,
+            "foundations": 0.10406100004911423,
+            "stage1": 0.29872041603084654,
+            "stage2": 0.8928593329619616,
+            "render": 0.020714249927550554,
+            "write": 0.35593183303717524
+          },
+          "peak_physical_bytes": 3339783312
+        },
+        {
+          "seconds": 1.833406083052978,
+          "stage_seconds": {
+            "rvm": 0.01296566694509238,
+            "foundations": 0.10193154099397361,
+            "stage1": 0.29774925007950515,
+            "stage2": 0.8890732079744339,
+            "render": 0.026957125053741038,
+            "write": 0.3623577910475433
+          },
+          "peak_physical_bytes": 3358641296
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.8354259170591831,
+      "peak_physical_bytes": 3367521376,
+      "case": "blue-hair-gauze",
+      "cli_process_wall_seconds": 9.202660750015639,
+      "input_sha256": "ef1e5b6a1daf2e29db36f0e03e5ed9b79966f4eedbafff6af6cf9e2a4f6e078e"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "enabled",
+      "input": "blue-hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 4.1886638751020655,
+      "warmups": [
+        {
+          "seconds": 1.9611576669849455,
+          "stage_seconds": {
+            "rvm": 0.04351879097521305,
+            "foundations": 0.14247062499634922,
+            "stage1": 0.36528937506955117,
+            "stage2": 0.8097610410768539,
+            "render": 0.03313304204493761,
+            "write": 0.41736695799045265
+          },
+          "peak_physical_bytes": 7302452000
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.8282778749708086,
+          "stage_seconds": {
+            "rvm": 0.02832845808006823,
+            "foundations": 0.14184474991634488,
+            "stage1": 0.3399014590540901,
+            "stage2": 0.799935832968913,
+            "render": 0.019913582946173847,
+            "write": 0.35068833408877254
+          },
+          "peak_physical_bytes": 7402869584
+        },
+        {
+          "seconds": 1.829509540926665,
+          "stage_seconds": {
+            "rvm": 0.021836250089108944,
+            "foundations": 0.12288033298682421,
+            "stage1": 0.34057254204526544,
+            "stage2": 0.8096353330183774,
+            "render": 0.032090957975015044,
+            "write": 0.3536784170428291
+          },
+          "peak_physical_bytes": 7507202944
+        },
+        {
+          "seconds": 1.8215937500353903,
+          "stage_seconds": {
+            "rvm": 0.021831666002981365,
+            "foundations": 0.13379995804280043,
+            "stage1": 0.3348032090580091,
+            "stage2": 0.8119367499602959,
+            "render": 0.017596708028577268,
+            "write": 0.34836999990511686
+          },
+          "peak_physical_bytes": 7537759128
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.8282778749708086,
+      "peak_physical_bytes": 7537759128,
+      "case": "blue-hair-gauze",
+      "cli_process_wall_seconds": 12.87776191602461,
+      "input_sha256": "ef1e5b6a1daf2e29db36f0e03e5ed9b79966f4eedbafff6af6cf9e2a4f6e078e"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "reference",
+      "input": "blue-hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.3707618749467656,
+      "warmups": [
+        {
+          "seconds": 2.41911441704724,
+          "stage_seconds": {
+            "rvm": 0.053310833987779915,
+            "foundations": 0.13895462499931455,
+            "stage1": 0.4588353750295937,
+            "stage2": 1.1641587089980021,
+            "render": 0.02916637493763119,
+            "write": 0.4269134170608595
+          },
+          "peak_physical_bytes": 7728027216
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.293854041956365,
+          "stage_seconds": {
+            "rvm": 0.022290166933089495,
+            "foundations": 0.14631987502798438,
+            "stage1": 0.43565662507899106,
+            "stage2": 1.1628797089215368,
+            "render": 0.022664208081550896,
+            "write": 0.3605419589439407
+          },
+          "peak_physical_bytes": 7718327984
+        },
+        {
+          "seconds": 2.271999499993399,
+          "stage_seconds": {
+            "rvm": 0.0239717080257833,
+            "foundations": 0.11992783402092755,
+            "stage1": 0.43126895802561194,
+            "stage2": 1.1683066659606993,
+            "render": 0.025495250010862947,
+            "write": 0.3577995409723371
+          },
+          "peak_physical_bytes": 7717639880
+        },
+        {
+          "seconds": 2.257706875097938,
+          "stage_seconds": {
+            "rvm": 0.02143558394163847,
+            "foundations": 0.11714954196941108,
+            "stage1": 0.4325156669365242,
+            "stage2": 1.1585886660031974,
+            "render": 0.020780665916390717,
+            "write": 0.3603974999859929
+          },
+          "peak_physical_bytes": 7731730120
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 2.271999499993399,
+      "peak_physical_bytes": 7731730120,
+      "case": "blue-hair-gauze",
+      "cli_process_wall_seconds": 11.026680707931519,
+      "input_sha256": "ef1e5b6a1daf2e29db36f0e03e5ed9b79966f4eedbafff6af6cf9e2a4f6e078e"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "reference",
+      "input": "hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 1.8239337499253452,
+      "warmups": [
+        {
+          "seconds": 2.206110042054206,
+          "stage_seconds": {
+            "rvm": 0.04937062493991107,
+            "foundations": 0.1328207920305431,
+            "stage1": 0.40015274996403605,
+            "stage2": 1.050623207935132,
+            "render": 0.029119584010913968,
+            "write": 0.3962848340161145
+          },
+          "peak_physical_bytes": 3423816704
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.0266636660089716,
+          "stage_seconds": {
+            "rvm": 0.014308833982795477,
+            "foundations": 0.1078606250230223,
+            "stage1": 0.37050233292393386,
+            "stage2": 1.0318053329829127,
+            "render": 0.016458375030197203,
+            "write": 0.3390257080318406
+          },
+          "peak_physical_bytes": 3399634016
+        },
+        {
+          "seconds": 2.034566416987218,
+          "stage_seconds": {
+            "rvm": 0.012984125060029328,
+            "foundations": 0.10109912510961294,
+            "stage1": 0.37036162498407066,
+            "stage2": 1.0432640418875962,
+            "render": 0.02284658409189433,
+            "write": 0.3383940840139985
+          },
+          "peak_physical_bytes": 3389164664
+        },
+        {
+          "seconds": 2.031302999937907,
+          "stage_seconds": {
+            "rvm": 0.014034207910299301,
+            "foundations": 0.10045399994123727,
+            "stage1": 0.3711444999789819,
+            "stage2": 1.0283892080187798,
+            "render": 0.02423454204108566,
+            "write": 0.340994416968897
+          },
+          "peak_physical_bytes": 3367472272
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 2.031302999937907,
+      "peak_physical_bytes": 3399634016,
+      "case": "hair-gauze",
+      "cli_process_wall_seconds": 11.249072709004395,
+      "input_sha256": "d78ce5d9f2432d1d0f2f212340adb3a65709f5c6edc67fa42ae5623286d9c054"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "enabled",
+      "input": "hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.0868627909803763,
+      "warmups": [
+        {
+          "seconds": 1.981805249932222,
+          "stage_seconds": {
+            "rvm": 0.045925999991595745,
+            "foundations": 0.13510195794515312,
+            "stage1": 0.33343274996150285,
+            "stage2": 0.906234291032888,
+            "render": 0.03170316596515477,
+            "write": 0.3857253750320524
+          },
+          "peak_physical_bytes": 3446508544
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.7911350830690935,
+          "stage_seconds": {
+            "rvm": 0.013759082998149097,
+            "foundations": 0.1081310419831425,
+            "stage1": 0.29612108308356255,
+            "stage2": 0.8939177501015365,
+            "render": 0.013473167084157467,
+            "write": 0.3223484579939395
+          },
+          "peak_physical_bytes": 3362163808
+        },
+        {
+          "seconds": 1.8182099999394268,
+          "stage_seconds": {
+            "rvm": 0.012469333014450967,
+            "foundations": 0.10084016702603549,
+            "stage1": 0.30120829096995294,
+            "stage2": 0.9039319169241935,
+            "render": 0.022589709027670324,
+            "write": 0.3357416670769453
+          },
+          "peak_physical_bytes": 3354152080
+        },
+        {
+          "seconds": 1.813120791921392,
+          "stage_seconds": {
+            "rvm": 0.013038459001109004,
+            "foundations": 0.10133237496484071,
+            "stage1": 0.2964104999555275,
+            "stage2": 0.8944007499376312,
+            "render": 0.02551979199051857,
+            "write": 0.33665249997284263
+          },
+          "peak_physical_bytes": 3371453560
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.813120791921392,
+      "peak_physical_bytes": 3371453560,
+      "case": "hair-gauze",
+      "cli_process_wall_seconds": 8.586927874945104,
+      "input_sha256": "d78ce5d9f2432d1d0f2f212340adb3a65709f5c6edc67fa42ae5623286d9c054"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "enabled",
+      "input": "hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.2169320839457214,
+      "warmups": [
+        {
+          "seconds": 1.9101879999507219,
+          "stage_seconds": {
+            "rvm": 0.049599042045883834,
+            "foundations": 0.14266033296007663,
+            "stage1": 0.36536795797292143,
+            "stage2": 0.8111802079947665,
+            "render": 0.02723866596352309,
+            "write": 0.37005366606172174
+          },
+          "peak_physical_bytes": 7547425688
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.2283165419939905,
+          "stage_seconds": {
+            "rvm": 0.019389833905734122,
+            "foundations": 0.12169158295728266,
+            "stage1": 0.3732036250876263,
+            "stage2": 0.8024821250000969,
+            "render": 0.017703249934129417,
+            "write": 0.30841479205992073
+          },
+          "peak_physical_bytes": 7417254880
+        },
+        {
+          "seconds": 1.76062129100319,
+          "stage_seconds": {
+            "rvm": 0.021961624966934323,
+            "foundations": 0.11675575003027916,
+            "stage1": 0.3363510830095038,
+            "stage2": 0.8099066249560565,
+            "render": 0.020565415965393186,
+            "write": 0.312985916971229
+          },
+          "peak_physical_bytes": 7514608632
+        },
+        {
+          "seconds": 1.7755787080386654,
+          "stage_seconds": {
+            "rvm": 0.020423542009666562,
+            "foundations": 0.11507774994242936,
+            "stage1": 0.3425818330142647,
+            "stage2": 0.8207271670689806,
+            "render": 0.021684249979443848,
+            "write": 0.3087745000375435
+          },
+          "peak_physical_bytes": 7458542632
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.7755787080386654,
+      "peak_physical_bytes": 7514608632,
+      "case": "hair-gauze",
+      "cli_process_wall_seconds": 8.993727499968372,
+      "input_sha256": "d78ce5d9f2432d1d0f2f212340adb3a65709f5c6edc67fa42ae5623286d9c054"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "reference",
+      "input": "hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.20613895799033344,
+      "warmups": [
+        {
+          "seconds": 2.3947616670047864,
+          "stage_seconds": {
+            "rvm": 0.04761591600254178,
+            "foundations": 0.13792366697452962,
+            "stage1": 0.4670011668931693,
+            "stage2": 1.198497875011526,
+            "render": 0.030912292073480785,
+            "write": 0.3655033749528229
+          },
+          "peak_physical_bytes": 7790253552
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.273655458004214,
+          "stage_seconds": {
+            "rvm": 0.014391583041287959,
+            "foundations": 0.12601970799732953,
+            "stage1": 0.4358065420528874,
+            "stage2": 1.19147245795466,
+            "render": 0.016964916954748333,
+            "write": 0.3169797919690609
+          },
+          "peak_physical_bytes": 7778211408
+        },
+        {
+          "seconds": 2.280839042039588,
+          "stage_seconds": {
+            "rvm": 0.01669245900120586,
+            "foundations": 0.11184758297167718,
+            "stage1": 0.44502820807974786,
+            "stage2": 1.2065910000819713,
+            "render": 0.018190499977208674,
+            "write": 0.332319249981083
+          },
+          "peak_physical_bytes": 7565547088
+        },
+        {
+          "seconds": 2.2820715829730034,
+          "stage_seconds": {
+            "rvm": 0.021579125081188977,
+            "foundations": 0.11432220903225243,
+            "stage1": 0.43565779097843915,
+            "stage2": 1.2202033339999616,
+            "render": 0.01813404099084437,
+            "write": 0.32640658400487155
+          },
+          "peak_physical_bytes": 7738857040
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 2.280839042039588,
+      "peak_physical_bytes": 7778211408,
+      "case": "hair-gauze",
+      "cli_process_wall_seconds": 10.631974791060202,
+      "input_sha256": "d78ce5d9f2432d1d0f2f212340adb3a65709f5c6edc67fa42ae5623286d9c054"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "reference",
+      "input": "hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 2.704787375056185,
+      "warmups": [
+        {
+          "seconds": 2.634363958030008,
+          "stage_seconds": {
+            "rvm": 0.04983537504449487,
+            "foundations": 0.13428262493107468,
+            "stage1": 0.42284974991343915,
+            "stage2": 1.0137437499361113,
+            "render": 0.020598832983523607,
+            "write": 0.4541697920067236
+          },
+          "peak_physical_bytes": 4291579528
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.0026945000281557,
+          "stage_seconds": {
+            "rvm": 0.01414295902941376,
+            "foundations": 0.11209762503858656,
+            "stage1": 0.3724475409835577,
+            "stage2": 1.0097265830263495,
+            "render": 0.020531583111733198,
+            "write": 0.32031966699287295
+          },
+          "peak_physical_bytes": 4291923640
+        },
+        {
+          "seconds": 1.9555693750735372,
+          "stage_seconds": {
+            "rvm": 0.012122957967221737,
+            "foundations": 0.0993584580719471,
+            "stage1": 0.36804929201025516,
+            "stage2": 0.9979894169373438,
+            "render": 0.022254084004089236,
+            "write": 0.31202595902141184
+          },
+          "peak_physical_bytes": 4259008208
+        },
+        {
+          "seconds": 1.9350754580227658,
+          "stage_seconds": {
+            "rvm": 0.012013041996397078,
+            "foundations": 0.09797208395320922,
+            "stage1": 0.36073691700585186,
+            "stage2": 0.9807634999742731,
+            "render": 0.024474249919876456,
+            "write": 0.3172797911101952
+          },
+          "peak_physical_bytes": 4251209400
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.9555693750735372,
+      "peak_physical_bytes": 4291923640,
+      "case": "hair-gauze",
+      "cli_process_wall_seconds": 12.467975584091619,
+      "input_sha256": "d78ce5d9f2432d1d0f2f212340adb3a65709f5c6edc67fa42ae5623286d9c054"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "enabled",
+      "input": "hair-gauze.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.10852520796470344,
+      "warmups": [
+        {
+          "seconds": 1.8974638750078157,
+          "stage_seconds": {
+            "rvm": 0.047541665961034596,
+            "foundations": 0.1286541250301525,
+            "stage1": 0.3125994590809569,
+            "stage2": 0.8558397500310093,
+            "render": 0.03685041703283787,
+            "write": 0.3788804579526186
+          },
+          "peak_physical_bytes": 4310765168
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.7248076250543818,
+          "stage_seconds": {
+            "rvm": 0.01227629091590643,
+            "foundations": 0.09989129204768687,
+            "stage1": 0.2833504159934819,
+            "stage2": 0.8582540840143338,
+            "render": 0.016530917026102543,
+            "write": 0.31468787498306483
+          },
+          "peak_physical_bytes": 4287467168
+        },
+        {
+          "seconds": 1.7226775418967009,
+          "stage_seconds": {
+            "rvm": 0.011849000002257526,
+            "foundations": 0.09734829200897366,
+            "stage1": 0.28289849997963756,
+            "stage2": 0.8444049169775099,
+            "render": 0.02512995805591345,
+            "write": 0.3163974171038717
+          },
+          "peak_physical_bytes": 4259450552
+        },
+        {
+          "seconds": 1.7471446670824662,
+          "stage_seconds": {
+            "rvm": 0.011626249994151294,
+            "foundations": 0.09752416610717773,
+            "stage1": 0.2837374999653548,
+            "stage2": 0.8813359159976244,
+            "render": 0.01969029090832919,
+            "write": 0.31280674994923174
+          },
+          "peak_physical_bytes": 4263399096
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.7248076250543818,
+      "peak_physical_bytes": 4287467168,
+      "case": "hair-gauze",
+      "cli_process_wall_seconds": 8.36109908297658,
+      "input_sha256": "d78ce5d9f2432d1d0f2f212340adb3a65709f5c6edc67fa42ae5623286d9c054"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "enabled",
+      "input": "blue-fur-glass.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.7947695830371231,
+      "warmups": [
+        {
+          "seconds": 1.9566867499379441,
+          "stage_seconds": {
+            "rvm": 0.04993583296891302,
+            "foundations": 0.14173679205123335,
+            "stage1": 0.3608785829273984,
+            "stage2": 0.8341439999639988,
+            "render": 0.04022229206748307,
+            "write": 0.3813540410483256
+          },
+          "peak_physical_bytes": 7588139760
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.792892707977444,
+          "stage_seconds": {
+            "rvm": 0.019563082954846323,
+            "foundations": 0.12798266601748765,
+            "stage1": 0.33395666698925197,
+            "stage2": 0.8184485000092536,
+            "render": 0.02017499995417893,
+            "write": 0.3245242079719901
+          },
+          "peak_physical_bytes": 7476319032
+        },
+        {
+          "seconds": 1.8071552080800757,
+          "stage_seconds": {
+            "rvm": 0.015232082922011614,
+            "foundations": 0.12217020790558308,
+            "stage1": 0.3358101249905303,
+            "stage2": 0.8351679580518976,
+            "render": 0.020324875018559396,
+            "write": 0.32409700006246567
+          },
+          "peak_physical_bytes": 7510938424
+        },
+        {
+          "seconds": 1.798945458023809,
+          "stage_seconds": {
+            "rvm": 0.02363062498625368,
+            "foundations": 0.12661620893049985,
+            "stage1": 0.3315452499082312,
+            "stage2": 0.8356899169739336,
+            "render": 0.018364667077548802,
+            "write": 0.31767470797058195
+          },
+          "peak_physical_bytes": 7504089912
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.798945458023809,
+      "peak_physical_bytes": 7510938424,
+      "case": "blue-fur-glass",
+      "cli_process_wall_seconds": 9.188854957930744,
+      "input_sha256": "3444d9249f985969b2a43005661e549153e0c8c66d0089011cc39584391fce42"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "reference",
+      "input": "blue-fur-glass.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.36035216704476625,
+      "warmups": [
+        {
+          "seconds": 2.3617032079491764,
+          "stage_seconds": {
+            "rvm": 0.04663016693666577,
+            "foundations": 0.13430362497456372,
+            "stage1": 0.4525612919824198,
+            "stage2": 1.164874583017081,
+            "render": 0.03426500002387911,
+            "write": 0.3864349579671398
+          },
+          "peak_physical_bytes": 7764612640
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.25526654208079,
+          "stage_seconds": {
+            "rvm": 0.02780354197602719,
+            "foundations": 0.12748608307447284,
+            "stage1": 0.4276359579525888,
+            "stage2": 1.16347550007049,
+            "render": 0.025197540991939604,
+            "write": 0.33235945797059685
+          },
+          "peak_physical_bytes": 7776114280
+        },
+        {
+          "seconds": 2.258533374988474,
+          "stage_seconds": {
+            "rvm": 0.024028041982091963,
+            "foundations": 0.1154670420801267,
+            "stage1": 0.42952837492339313,
+            "stage2": 1.1929281660122797,
+            "render": 0.02521162503398955,
+            "write": 0.32612550002522767
+          },
+          "peak_physical_bytes": 7739151976
+        },
+        {
+          "seconds": 2.223526250105351,
+          "stage_seconds": {
+            "rvm": 0.01890412496868521,
+            "foundations": 0.11191241606138647,
+            "stage1": 0.4266494159819558,
+            "stage2": 1.1606667079031467,
+            "render": 0.02717408398166299,
+            "write": 0.3366640410386026
+          },
+          "peak_physical_bytes": 7562827368
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 2.25526654208079,
+      "peak_physical_bytes": 7776114280,
+      "case": "blue-fur-glass",
+      "cli_process_wall_seconds": 10.638769792043604,
+      "input_sha256": "3444d9249f985969b2a43005661e549153e0c8c66d0089011cc39584391fce42"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "reference",
+      "input": "blue-fur-glass.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 2.7073103330330923,
+      "warmups": [
+        {
+          "seconds": 2.185872457921505,
+          "stage_seconds": {
+            "rvm": 0.0489365829853341,
+            "foundations": 0.13273837498854846,
+            "stage1": 0.4076604580041021,
+            "stage2": 1.0276227500289679,
+            "render": 0.024447916890494525,
+            "write": 0.38798995793331414
+          },
+          "peak_physical_bytes": 4318367368
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.958114083041437,
+          "stage_seconds": {
+            "rvm": 0.012906207935884595,
+            "foundations": 0.10309587500523776,
+            "stage1": 0.3587939159478992,
+            "stage2": 1.0034632500028238,
+            "render": 0.014383625006303191,
+            "write": 0.32310425001196563
+          },
+          "peak_physical_bytes": 4300295912
+        },
+        {
+          "seconds": 1.9946247080806643,
+          "stage_seconds": {
+            "rvm": 0.012800041935406625,
+            "foundations": 0.10012020799331367,
+            "stage1": 0.37696087500080466,
+            "stage2": 1.0175051249098033,
+            "render": 0.017731625004671514,
+            "write": 0.3266492501134053
+          },
+          "peak_physical_bytes": 4303032064
+        },
+        {
+          "seconds": 1.9758712910115719,
+          "stage_seconds": {
+            "rvm": 0.012666124966926873,
+            "foundations": 0.10183629207313061,
+            "stage1": 0.36730770906433463,
+            "stage2": 1.015672874986194,
+            "render": 0.014464749954640865,
+            "write": 0.3213511250214651
+          },
+          "peak_physical_bytes": 4279176960
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.9758712910115719,
+      "peak_physical_bytes": 4303032064,
+      "case": "blue-fur-glass",
+      "cli_process_wall_seconds": 12.036734209046699,
+      "input_sha256": "3444d9249f985969b2a43005661e549153e0c8c66d0089011cc39584391fce42"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "enabled",
+      "input": "blue-fur-glass.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.11266741703730077,
+      "warmups": [
+        {
+          "seconds": 1.9769058329984546,
+          "stage_seconds": {
+            "rvm": 0.051022208062931895,
+            "foundations": 0.1330112499417737,
+            "stage1": 0.3339140419848263,
+            "stage2": 0.8911820839857683,
+            "render": 0.031147292000241578,
+            "write": 0.39347708399873227
+          },
+          "peak_physical_bytes": 4310191728
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.751798209035769,
+          "stage_seconds": {
+            "rvm": 0.013220582972280681,
+            "foundations": 0.10455245804041624,
+            "stage1": 0.28678766707889736,
+            "stage2": 0.868426457978785,
+            "render": 0.016517832991667092,
+            "write": 0.3183534999843687
+          },
+          "peak_physical_bytes": 4293725880
+        },
+        {
+          "seconds": 1.7635119159240276,
+          "stage_seconds": {
+            "rvm": 0.012615000014193356,
+            "foundations": 0.10158741602208465,
+            "stage1": 0.29340483399573714,
+            "stage2": 0.8737193749984726,
+            "render": 0.014784333063289523,
+            "write": 0.3193450840190053
+          },
+          "peak_physical_bytes": 4250717880
+        },
+        {
+          "seconds": 1.7991728340275586,
+          "stage_seconds": {
+            "rvm": 0.013026374974288046,
+            "foundations": 0.09854583395645022,
+            "stage1": 0.30276458396110684,
+            "stage2": 0.9058572080684826,
+            "render": 0.015360584016889334,
+            "write": 0.31949754199013114
+          },
+          "peak_physical_bytes": 4267544248
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.7635119159240276,
+      "peak_physical_bytes": 4293725880,
+      "case": "blue-fur-glass",
+      "cli_process_wall_seconds": 8.582359875086695,
+      "input_sha256": "3444d9249f985969b2a43005661e549153e0c8c66d0089011cc39584391fce42"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "enabled",
+      "input": "blue-fur-glass.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 1.8263913340633735,
+      "warmups": [
+        {
+          "seconds": 2.0314407910918817,
+          "stage_seconds": {
+            "rvm": 0.04108937503769994,
+            "foundations": 0.13657162501476705,
+            "stage1": 0.3306479169987142,
+            "stage2": 0.9580355000216514,
+            "render": 0.02267133304849267,
+            "write": 0.40146641700994223
+          },
+          "peak_physical_bytes": 3421047832
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 1.8424995000241324,
+          "stage_seconds": {
+            "rvm": 0.013031165930442512,
+            "foundations": 0.09807399997953326,
+            "stage1": 0.29834712494630367,
+            "stage2": 0.921619041939266,
+            "render": 0.014768874971196055,
+            "write": 0.3382958750007674
+          },
+          "peak_physical_bytes": 3354561680
+        },
+        {
+          "seconds": 1.8780504170572385,
+          "stage_seconds": {
+            "rvm": 0.012568208971060812,
+            "foundations": 0.09903716598637402,
+            "stage1": 0.3109094169922173,
+            "stage2": 0.9494432919891551,
+            "render": 0.016843292047269642,
+            "write": 0.34523025003727525
+          },
+          "peak_physical_bytes": 3343125648
+        },
+        {
+          "seconds": 1.8661795409861952,
+          "stage_seconds": {
+            "rvm": 0.012630249955691397,
+            "foundations": 0.10242654196918011,
+            "stage1": 0.309329874929972,
+            "stage2": 0.9326471249805763,
+            "render": 0.019350958988070488,
+            "write": 0.3466887909453362
+          },
+          "peak_physical_bytes": 3379268800
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 1.8661795409861952,
+      "peak_physical_bytes": 3379268800,
+      "case": "blue-fur-glass",
+      "cli_process_wall_seconds": 10.609170333016664,
+      "input_sha256": "3444d9249f985969b2a43005661e549153e0c8c66d0089011cc39584391fce42"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "reference",
+      "input": "blue-fur-glass.png",
+      "frames": 1,
+      "native_hw": [
+        1024,
+        1536
+      ],
+      "profile_hw": [
+        1024,
+        1536
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.08859933295752853,
+      "warmups": [
+        {
+          "seconds": 2.2819989999989048,
+          "stage_seconds": {
+            "rvm": 0.043938167043961585,
+            "foundations": 0.14117854204960167,
+            "stage1": 0.4249476660043001,
+            "stage2": 1.102713375003077,
+            "render": 0.021446916973218322,
+            "write": 0.4027373749995604
+          },
+          "peak_physical_bytes": 3429420104
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 2.097262208000757,
+          "stage_seconds": {
+            "rvm": 0.015581292100250721,
+            "foundations": 0.11548445897642523,
+            "stage1": 0.39167279202956706,
+            "stage2": 1.0738890829961747,
+            "render": 0.015210333978757262,
+            "write": 0.33685854205396026
+          },
+          "peak_physical_bytes": 3410382016
+        },
+        {
+          "seconds": 2.029057167004794,
+          "stage_seconds": {
+            "rvm": 0.01384475000668317,
+            "foundations": 0.10394262510817498,
+            "stage1": 0.37209987500682473,
+            "stage2": 1.023336625075899,
+            "render": 0.024268458015285432,
+            "write": 0.34685233305208385
+          },
+          "peak_physical_bytes": 3375811800
+        },
+        {
+          "seconds": 2.089368583052419,
+          "stage_seconds": {
+            "rvm": 0.012754541006870568,
+            "foundations": 0.09758995799347758,
+            "stage1": 0.37745020899455994,
+            "stage2": 1.0870232919696718,
+            "render": 0.02306570892687887,
+            "write": 0.34734908293467015
+          },
+          "peak_physical_bytes": 3394931880
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 2.089368583052419,
+      "peak_physical_bytes": 3410382016,
+      "case": "blue-fur-glass",
+      "cli_process_wall_seconds": 9.829521999927238,
+      "input_sha256": "3444d9249f985969b2a43005661e549153e0c8c66d0089011cc39584391fce42"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "reference",
+      "input": "moving-32.mp4",
+      "frames": 32,
+      "native_hw": [
+        720,
+        1280
+      ],
+      "profile_hw": [
+        768,
+        1280
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 2.708297915989533,
+      "warmups": [
+        {
+          "seconds": 44.53673941688612,
+          "stage_seconds": {
+            "rvm": 0.6958826715126634,
+            "foundations": 2.4352274135453627,
+            "stage1": 14.457719043595716,
+            "stage2": 19.10016941651702,
+            "render": 0.5396850048564374,
+            "write": 5.107150539639406
+          },
+          "peak_physical_bytes": 4513156984
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 42.9753240828868,
+          "stage_seconds": {
+            "rvm": 0.258355664787814,
+            "foundations": 1.9341983338817954,
+            "stage1": 13.901632374036126,
+            "stage2": 19.098389123100787,
+            "render": 0.5502766662975773,
+            "write": 4.870402958476916
+          },
+          "peak_physical_bytes": 4385951824
+        },
+        {
+          "seconds": 43.78349333303049,
+          "stage_seconds": {
+            "rvm": 0.25592904502991587,
+            "foundations": 1.9355327541707084,
+            "stage1": 14.113154915976338,
+            "stage2": 19.307280252105556,
+            "render": 0.4749462103936821,
+            "write": 5.337545791058801
+          },
+          "peak_physical_bytes": 4380512432
+        },
+        {
+          "seconds": 42.77325104107149,
+          "stage_seconds": {
+            "rvm": 0.25504870899021626,
+            "foundations": 1.9173383332090452,
+            "stage1": 13.941040997509845,
+            "stage2": 19.05891437479295,
+            "render": 0.4658200857229531,
+            "write": 4.815631249453872
+          },
+          "peak_physical_bytes": 4393144472
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 42.9753240828868,
+      "peak_physical_bytes": 4393144472,
+      "case": "moving-32",
+      "cli_process_wall_seconds": 178.03694545908365,
+      "input_sha256": "62b3850ec0146ffca14cdbc49b14ff85908832ba86259b7ad560d5c9102d0cb0"
+    },
+    {
+      "status": "complete",
+      "precision": "fp16",
+      "kernel_mode": "enabled",
+      "input": "moving-32.mp4",
+      "frames": 32,
+      "native_hw": [
+        720,
+        1280
+      ],
+      "profile_hw": [
+        768,
+        1280
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 0.1139969159848988,
+      "warmups": [
+        {
+          "seconds": 37.17425362498034,
+          "stage_seconds": {
+            "rvm": 0.28611933160573244,
+            "foundations": 1.9483286659233272,
+            "stage1": 11.013614875962958,
+            "stage2": 16.3777256681351,
+            "render": 0.44553175184410065,
+            "write": 5.014235163806006
+          },
+          "peak_physical_bytes": 4525871016
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 37.35930970904883,
+          "stage_seconds": {
+            "rvm": 0.2551095817470923,
+            "foundations": 1.9210541241336614,
+            "stage1": 10.982593168853782,
+            "stage2": 16.283085664152168,
+            "render": 0.4521746252430603,
+            "write": 5.248375040711835
+          },
+          "peak_physical_bytes": 4398387208
+        },
+        {
+          "seconds": 36.86656462494284,
+          "stage_seconds": {
+            "rvm": 0.2563876648200676,
+            "foundations": 1.9180959586519748,
+            "stage1": 10.952597248135135,
+            "stage2": 16.32004120585043,
+            "render": 0.43085995595902205,
+            "write": 4.76274062669836
+          },
+          "peak_physical_bytes": 4409315480
+        },
+        {
+          "seconds": 37.122901417082176,
+          "stage_seconds": {
+            "rvm": 0.2556780817685649,
+            "foundations": 1.9163442070130259,
+            "stage1": 10.998242209781893,
+            "stage2": 16.31757820781786,
+            "render": 0.513432749779895,
+            "write": 4.851198832737282
+          },
+          "peak_physical_bytes": 4379824256
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 37.122901417082176,
+      "peak_physical_bytes": 4409315480,
+      "case": "moving-32",
+      "cli_process_wall_seconds": 149.7886945840437,
+      "input_sha256": "62b3850ec0146ffca14cdbc49b14ff85908832ba86259b7ad560d5c9102d0cb0"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "enabled",
+      "input": "moving-32.mp4",
+      "frames": 32,
+      "native_hw": [
+        720,
+        1280
+      ],
+      "profile_hw": [
+        768,
+        1280
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 1.8215230000205338,
+      "warmups": [
+        {
+          "seconds": 39.73493045801297,
+          "stage_seconds": {
+            "rvm": 0.2888034170027822,
+            "foundations": 1.9886301620863378,
+            "stage1": 11.342321917880327,
+            "stage2": 17.0921278327005,
+            "render": 0.5091278339968994,
+            "write": 6.17703996412456
+          },
+          "peak_physical_bytes": 3663498600
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 39.39671545801684,
+          "stage_seconds": {
+            "rvm": 0.25504866580013186,
+            "foundations": 1.9539445409318432,
+            "stage1": 11.31347375002224,
+            "stage2": 17.023117708275095,
+            "render": 0.5295621255645528,
+            "write": 6.102478122222237
+          },
+          "peak_physical_bytes": 3503722024
+        },
+        {
+          "seconds": 39.54047279106453,
+          "stage_seconds": {
+            "rvm": 0.2590727489441633,
+            "foundations": 1.9790218768175691,
+            "stage1": 11.36020995886065,
+            "stage2": 17.068878789898008,
+            "render": 0.4763893337221816,
+            "write": 6.20139345782809
+          },
+          "peak_physical_bytes": 3504803368
+        },
+        {
+          "seconds": 39.31635904102586,
+          "stage_seconds": {
+            "rvm": 0.2534347497858107,
+            "foundations": 1.949767668847926,
+            "stage1": 11.45405366376508,
+            "stage2": 17.16594645800069,
+            "render": 0.43663453799672425,
+            "write": 5.853969709365629
+          },
+          "peak_physical_bytes": 3524103768
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 39.39671545801684,
+      "peak_physical_bytes": 3524103768,
+      "case": "moving-32",
+      "cli_process_wall_seconds": 161.10912508401088,
+      "input_sha256": "62b3850ec0146ffca14cdbc49b14ff85908832ba86259b7ad560d5c9102d0cb0"
+    },
+    {
+      "status": "complete",
+      "precision": "q8",
+      "kernel_mode": "reference",
+      "input": "moving-32.mp4",
+      "frames": 32,
+      "native_hw": [
+        720,
+        1280
+      ],
+      "profile_hw": [
+        768,
+        1280
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 1.8336895420216024,
+      "warmups": [
+        {
+          "seconds": 45.837248208001256,
+          "stage_seconds": {
+            "rvm": 0.300993706099689,
+            "foundations": 2.08674253791105,
+            "stage1": 14.498105041799136,
+            "stage2": 20.145936415879987,
+            "render": 0.47587458114139736,
+            "write": 6.169099165010266
+          },
+          "peak_physical_bytes": 3642232120
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 45.60721520904917,
+          "stage_seconds": {
+            "rvm": 0.25917241745628417,
+            "foundations": 1.98432995704934,
+            "stage1": 14.44571833498776,
+            "stage2": 20.14022987266071,
+            "render": 0.4879612931981683,
+            "write": 5.999823536956683
+          },
+          "peak_physical_bytes": 3501411856
+        },
+        {
+          "seconds": 47.544338124920614,
+          "stage_seconds": {
+            "rvm": 0.2617649990133941,
+            "foundations": 1.9996679599862546,
+            "stage1": 15.196102956077084,
+            "stage2": 20.843271409743465,
+            "render": 0.4835458775050938,
+            "write": 6.476700708386488
+          },
+          "peak_physical_bytes": 3502313072
+        },
+        {
+          "seconds": 46.08793350006454,
+          "stage_seconds": {
+            "rvm": 0.26209408964496106,
+            "foundations": 2.0012841277057305,
+            "stage1": 14.630441499059089,
+            "stage2": 20.1894856269937,
+            "render": 0.5202616668539122,
+            "write": 6.034113751142286
+          },
+          "peak_physical_bytes": 3501100632
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 46.08793350006454,
+      "peak_physical_bytes": 3502313072,
+      "case": "moving-32",
+      "cli_process_wall_seconds": 188.35580512497108,
+      "input_sha256": "62b3850ec0146ffca14cdbc49b14ff85908832ba86259b7ad560d5c9102d0cb0"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "reference",
+      "input": "moving-32.mp4",
+      "frames": 32,
+      "native_hw": [
+        720,
+        1280
+      ],
+      "profile_hw": [
+        768,
+        1280
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 5.245251292013563,
+      "warmups": [
+        {
+          "seconds": 50.87823999999091,
+          "stage_seconds": {
+            "rvm": 0.3242960849311203,
+            "foundations": 2.166952336556278,
+            "stage1": 17.580560041824356,
+            "stage2": 23.054758753045462,
+            "render": 0.4620747029548511,
+            "write": 5.001187164685689
+          },
+          "peak_physical_bytes": 8011667240
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 50.46506750001572,
+          "stage_seconds": {
+            "rvm": 0.29324379086028785,
+            "foundations": 2.194523241603747,
+            "stage1": 17.12569712579716,
+            "stage2": 23.33773662324529,
+            "render": 0.40306170703843236,
+            "write": 4.794543290743604
+          },
+          "peak_physical_bytes": 7890737080
+        },
+        {
+          "seconds": 49.90404358296655,
+          "stage_seconds": {
+            "rvm": 0.2894291706616059,
+            "foundations": 2.1409393737558275,
+            "stage1": 16.951685041887686,
+            "stage2": 23.006812377949245,
+            "render": 0.443521581008099,
+            "write": 4.7998717919690534
+          },
+          "peak_physical_bytes": 7886641152
+        },
+        {
+          "seconds": 51.673663416993804,
+          "stage_seconds": {
+            "rvm": 0.29770695592742413,
+            "foundations": 2.248882210231386,
+            "stage1": 17.778417915222235,
+            "stage2": 24.02794925204944,
+            "render": 0.42532737308647484,
+            "write": 4.58103662438225
+          },
+          "peak_physical_bytes": 7896717288
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 50.46506750001572,
+      "peak_physical_bytes": 7896717288,
+      "case": "moving-32",
+      "cli_process_wall_seconds": 209.42043791594915,
+      "input_sha256": "62b3850ec0146ffca14cdbc49b14ff85908832ba86259b7ad560d5c9102d0cb0"
+    },
+    {
+      "status": "complete",
+      "precision": "fp32",
+      "kernel_mode": "enabled",
+      "input": "moving-32.mp4",
+      "frames": 32,
+      "native_hw": [
+        720,
+        1280
+      ],
+      "profile_hw": [
+        768,
+        1280
+      ],
+      "outputs": [
+        "alpha",
+        "fg",
+        "checker",
+        "cutout"
+      ],
+      "png": true,
+      "compile": true,
+      "hann_chunk": 4,
+      "hann_stride": 2,
+      "model_load_seconds": 3.6388714159838855,
+      "warmups": [
+        {
+          "seconds": 38.495236583054066,
+          "stage_seconds": {
+            "rvm": 0.3368812946137041,
+            "foundations": 2.2640240419423208,
+            "stage1": 13.039758416241966,
+            "stage2": 15.380646379897371,
+            "render": 0.43663737073075026,
+            "write": 4.883738377830014
+          },
+          "peak_physical_bytes": 7645877480
+        }
+      ],
+      "runs": [
+        {
+          "seconds": 39.04557983390987,
+          "stage_seconds": {
+            "rvm": 0.30558262672275305,
+            "foundations": 2.1668625014135614,
+            "stage1": 12.666692585102282,
+            "stage2": 15.20500487787649,
+            "render": 0.4256474592257291,
+            "write": 4.80185083381366
+          },
+          "peak_physical_bytes": 7566153104
+        },
+        {
+          "seconds": 37.641672583064064,
+          "stage_seconds": {
+            "rvm": 0.2906732107512653,
+            "foundations": 2.106414919369854,
+            "stage1": 12.685520335915498,
+            "stage2": 15.20594546396751,
+            "render": 0.42669962358195335,
+            "write": 4.619468624587171
+          },
+          "peak_physical_bytes": 7544755600
+        },
+        {
+          "seconds": 37.65727008297108,
+          "stage_seconds": {
+            "rvm": 0.2867319150827825,
+            "foundations": 2.108999544288963,
+            "stage1": 12.699751957086846,
+            "stage2": 15.243067622650415,
+            "render": 0.43703433277551085,
+            "write": 4.5609804559499025
+          },
+          "peak_physical_bytes": 7565546896
+        }
+      ],
+      "memory_method": "proc_pid_rusage physical footprint, 20 ms sampling during each workflow",
+      "timing_scope": "decode through completed output writes and scratch cleanup; excludes initial model load",
+      "median_seconds": 37.65727008297108,
+      "peak_physical_bytes": 7566153104,
+      "case": "moving-32",
+      "cli_process_wall_seconds": 158.0052349170437,
+      "input_sha256": "62b3850ec0146ffca14cdbc49b14ff85908832ba86259b7ad560d5c9102d0cb0"
+    }
+  ],
+  "quality": [
+    {
+      "case": "fur-motion",
+      "precision": "fp32",
+      "outputs": 4,
+      "all_exact": false,
+      "passed": true,
+      "worst_max": 3.0518043793392844e-05
+    },
+    {
+      "case": "fur-motion",
+      "precision": "fp16",
+      "outputs": 4,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "fur-motion",
+      "precision": "q8",
+      "outputs": 4,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "blue-hair-gauze",
+      "precision": "fp16",
+      "outputs": 4,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "blue-hair-gauze",
+      "precision": "q8",
+      "outputs": 4,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "blue-hair-gauze",
+      "precision": "fp32",
+      "outputs": 4,
+      "all_exact": false,
+      "passed": true,
+      "worst_max": 3.0518043793392844e-05
+    },
+    {
+      "case": "hair-gauze",
+      "precision": "q8",
+      "outputs": 4,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "hair-gauze",
+      "precision": "fp32",
+      "outputs": 4,
+      "all_exact": false,
+      "passed": true,
+      "worst_max": 3.0518043793392844e-05
+    },
+    {
+      "case": "hair-gauze",
+      "precision": "fp16",
+      "outputs": 4,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "blue-fur-glass",
+      "precision": "fp32",
+      "outputs": 4,
+      "all_exact": false,
+      "passed": true,
+      "worst_max": 1.5259021896696422e-05
+    },
+    {
+      "case": "blue-fur-glass",
+      "precision": "fp16",
+      "outputs": 4,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "blue-fur-glass",
+      "precision": "q8",
+      "outputs": 4,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "moving-32",
+      "precision": "fp16",
+      "outputs": 128,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "moving-32",
+      "precision": "q8",
+      "outputs": 128,
+      "all_exact": true,
+      "passed": true,
+      "worst_max": 0.0
+    },
+    {
+      "case": "moving-32",
+      "precision": "fp32",
+      "outputs": 128,
+      "all_exact": false,
+      "passed": true,
+      "worst_max": 3.0518043793392844e-05
+    }
+  ],
+  "inputs": {
+    "fur-motion": {
+      "sha256": "0a721e992526212122e118c794d9f6e2476165b1164571a69a08a55c4cb41197",
+      "file": "fur-motion.png"
+    },
+    "blue-hair-gauze": {
+      "sha256": "ef1e5b6a1daf2e29db36f0e03e5ed9b79966f4eedbafff6af6cf9e2a4f6e078e",
+      "file": "blue-hair-gauze.png"
+    },
+    "hair-gauze": {
+      "sha256": "d78ce5d9f2432d1d0f2f212340adb3a65709f5c6edc67fa42ae5623286d9c054",
+      "file": "hair-gauze.png"
+    },
+    "blue-fur-glass": {
+      "sha256": "3444d9249f985969b2a43005661e549153e0c8c66d0089011cc39584391fce42",
+      "file": "blue-fur-glass.png"
+    },
+    "moving-32": {
+      "sha256": "62b3850ec0146ffca14cdbc49b14ff85908832ba86259b7ad560d5c9102d0cb0",
+      "file": "moving-32.mp4"
+    }
+  },
+  "endpoint": "Actual packaged CLI: input decode, inference, render, four PNG writes, scratch cleanup; initial model loading and one complete warm-up reported separately.",
+  "design": "One fresh process per case/precision/kernel mode; one warm-up and three measured runs. Enabled/reference order alternates by case and precision. No parallel inference.",
+  "status": "complete"
+}

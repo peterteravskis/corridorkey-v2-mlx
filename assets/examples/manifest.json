@@ -1,0 +1,30 @@
+[
+  {
+    "file": "examples/squirrel-input.png",
+    "sha256": "0a721e992526212122e118c794d9f6e2476165b1164571a69a08a55c4cb41197",
+    "role": "synthetic demonstration input",
+    "precision": "fp32",
+    "screen": "green"
+  },
+  {
+    "file": "examples/squirrel-cutout.png",
+    "sha256": "3d9e3dbe9c0425bf16cc140f7000009841715e654956dadcc6a6ee311dd19b71",
+    "role": "unaltered 16-bit RGBA output from release CLI",
+    "precision": "fp32",
+    "screen": "green"
+  },
+  {
+    "file": "examples/redhead-input.png",
+    "sha256": "ef1e5b6a1daf2e29db36f0e03e5ed9b79966f4eedbafff6af6cf9e2a4f6e078e",
+    "role": "synthetic demonstration input",
+    "precision": "fp32",
+    "screen": "blue"
+  },
+  {
+    "file": "examples/redhead-cutout.png",
+    "sha256": "0386c30fba4a54596e3ec1ccc87ecd8318afd160b6369191187875924875a6dc",
+    "role": "unaltered 16-bit RGBA output from release CLI",
+    "precision": "fp32",
+    "screen": "blue"
+  }
+]
