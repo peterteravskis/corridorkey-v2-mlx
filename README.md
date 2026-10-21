@@ -55,6 +55,11 @@ under the **Corridor Key Licence 2.0** and the foundation models' own licenses.
 The code license does not change the terms covering those assets. See
 [attribution and the license boundary](NOTICE).
 
+Organizations with over US $20 million in annual gross revenue require a
+CorridorKey plugin seat per user. See the
+[original license](https://github.com/nikopueringer/CorridorKey2.0/blob/master/LICENSE)
+for details.
+
 ## Quick start
 
 Use an **Apple Silicon Mac**, **Python 3.12**, and enough available unified
