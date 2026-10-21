@@ -2,12 +2,38 @@
 
 [Home](../README.md) · [Hugging Face model card](https://huggingface.co/cdelta/CorridorKey-v2-MLX)
 
-Download the companion model release:
+Choose a precision from the [Hugging Face Collection](https://huggingface.co/collections/cdelta/corridorkey-v2-mlx-6ad84231314d2593c3799e34):
+
+| Precision | Repository | CLI option |
+| :--- | :--- | :--- |
+| FP32 | [CorridorKey-v2-MLX-fp32](https://huggingface.co/cdelta/CorridorKey-v2-MLX-fp32) | `--precision fp32` (default) |
+| Mixed FP16 | [CorridorKey-v2-MLX-fp16](https://huggingface.co/cdelta/CorridorKey-v2-MLX-fp16) | `--precision fp16` |
+| Q8 / 8-bit | [CorridorKey-v2-MLX-8bit](https://huggingface.co/cdelta/CorridorKey-v2-MLX-8bit) | `--precision q8` |
+
+```bash
+hf download cdelta/CorridorKey-v2-MLX-fp32 --local-dir /path/to/CorridorKey-v2-MLX
+corridorkey-mlx --model-root /path/to/CorridorKey-v2-MLX --list-profiles
+
+# Alternatively, download and inspect the 8-bit profiles.
+hf download cdelta/CorridorKey-v2-MLX-8bit --local-dir /path/to/CorridorKey-v2-MLX-8bit
+corridorkey-mlx --model-root /path/to/CorridorKey-v2-MLX-8bit --precision q8 --list-profiles
+```
+
+Each precision repository includes only its own profiles and a matching
+`model-manifest.json` and `SHA256SUMS`, plus licenses and shared evidence.
+Keep the folder layout intact. Pass the download directory to `--model-root`;
+the CLI adds the `fp16/` or `q8/` subfolder when you select that precision.
+When downloading several repositories into one directory, common documentation
+and manifests are replaced by the last download; use separate directories to
+retain each release's complete checksum inventory.
+
+The [combined bundle](https://huggingface.co/cdelta/CorridorKey-v2-MLX) remains available under its existing name:
 
 ```bash
 hf download cdelta/CorridorKey-v2-MLX --local-dir /path/to/CorridorKey-v2-MLX
-corridorkey-mlx --model-root /path/to/CorridorKey-v2-MLX --list-profiles
 ```
+
+Combined layout (each separate release contains only its precision's profiles):
 
 ```text
 CorridorKey-v2-MLX/
@@ -41,9 +67,8 @@ it does not enable two-frame temporal windows. Additional stage-two batch profil
 are included for API/research use; the CLI uses batch one.
 
 For 1280×720 footage with any of the three precisions, use `--height 768 --width 1280`.
-To download only Q8 profiles and licenses, add
-`--include 'q8/*' 'LICENSE' 'licenses/*' 'README.md' '*manifest.json' '*NOTICES.md'`
-to the `hf download` command. Keep the repository directory layout intact.
+For a Q8-only download with complete matching checksums, use the dedicated
+`cdelta/CorridorKey-v2-MLX-8bit` repository.
 The converted graph format is `corridorkey-mlx-graph-v1`, not a Transformers
 `AutoModel` or MLX-LM checkpoint.
 

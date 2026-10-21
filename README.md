@@ -7,10 +7,10 @@
 **MLX • FP32 | FP16 | Q8 • Python API and practical CLI**
 
 [![Code: Apache 2.0](https://img.shields.io/badge/code-Apache_2.0-2563eb)](LICENSE)
-[![Models on Hugging Face](https://img.shields.io/badge/🤗_models-cdelta%2FCorridorKey--v2--MLX-ffd21e)](https://huggingface.co/cdelta/CorridorKey-v2-MLX)
+[![Models on Hugging Face](https://img.shields.io/badge/🤗_models-FP32_%7C_FP16_%7C_8bit-ffd21e)](https://huggingface.co/collections/cdelta/corridorkey-v2-mlx-6ad84231314d2593c3799e34)
 [![Apple Silicon](https://img.shields.io/badge/platform-Apple_Silicon-111827)](#quick-start)
 
-[Quick start](#quick-start) · [CLI guide](docs/CLI.md) · [Python API](docs/API.md) · [Measurements](docs/BENCHMARKS.md) · [Model card](https://huggingface.co/cdelta/CorridorKey-v2-MLX)
+[Quick start](#quick-start) · [CLI guide](docs/CLI.md) · [Python API](docs/API.md) · [Measurements](docs/BENCHMARKS.md) · [Model downloads](https://huggingface.co/collections/cdelta/corridorkey-v2-mlx-6ad84231314d2593c3799e34)
 
 </div>
 
@@ -48,7 +48,7 @@ synthetic demonstration plates, without ground-truth mattes.
 | **Command line** | Read a still, ordered image sequence, or video; preserve temporal state; export PNGs or video |
 | **Python API** | Load the engine once and integrate it into another local workflow |
 | **Evidence** | Timing samples, physical-memory measurements, quality comparisons, and conversion provenance |
-| **Companion model repository** | FP32, FP16, and Q8 profiles, model licenses, notices, and SHA-256 manifests |
+| **Companion model repositories** | FP32, FP16, and Q8 profiles, model licenses, notices, and SHA-256 manifests |
 
 The source here is **Apache 2.0**. The model files are distributed separately
 under the **Corridor Key Licence 2.0** and the foundation models' own licenses.
@@ -69,9 +69,9 @@ python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install '.[download]'
 
-# Read the model license, then download all three precision variants.
+# Read the model license, then download the FP32 profiles.
 # Put this directory on external storage if that suits your workflow.
-hf download cdelta/CorridorKey-v2-MLX --local-dir /path/to/CorridorKey-v2-MLX
+hf download cdelta/CorridorKey-v2-MLX-fp32 --local-dir /path/to/CorridorKey-v2-MLX
 ```
 
 Check a still or clip before loading model weights:
@@ -111,17 +111,31 @@ For blue-screen cleanup, add `--screen blue`. The default is green.
 
 ## Choose a precision
 
+Download the precision you need from the [Hugging Face Collection](https://huggingface.co/collections/cdelta/corridorkey-v2-mlx-6ad84231314d2593c3799e34).
+Each repository includes its matching resolution and temporal profiles, licenses,
+checksums, examples, and benchmark evidence.
+
 ```bash
+hf download cdelta/CorridorKey-v2-MLX-8bit --local-dir /path/to/CorridorKey-v2-MLX-8bit
+
 corridorkey-mlx --precision q8 --compile --image-sequence \
-  --model-root /path/to/CorridorKey-v2-MLX \
+  --model-root /path/to/CorridorKey-v2-MLX-8bit \
   --input /path/to/plate.png --output-dir outputs/plate-q8
 ```
 
-| Selection | Weights / compute | Practical tradeoff |
-| :--- | :--- | :--- |
-| `--precision fp32` | FP32 default | Numerical reference; largest memory footprint |
-| `--precision fp16` | Mixed FP16 with FP32 sensitive operations | Lower memory; small numerical changes |
-| `--precision q8` | Group-64 affine Q8 linear weights, FP16 residual weights/activations | Lowest measured memory; larger localized alpha changes |
+| Download | CLI selection | Weights / compute | Practical tradeoff |
+| :--- | :--- | :--- | :--- |
+| [FP32](https://huggingface.co/cdelta/CorridorKey-v2-MLX-fp32) | `--precision fp32` | FP32 default | Numerical reference; largest memory footprint |
+| [FP16](https://huggingface.co/cdelta/CorridorKey-v2-MLX-fp16) | `--precision fp16` | Mixed FP16 with FP32 sensitive operations | Lower memory; small numerical changes |
+| [8-bit / Q8](https://huggingface.co/cdelta/CorridorKey-v2-MLX-8bit) | `--precision q8` | Group-64 affine Q8 linear weights, FP16 residual weights/activations | Lowest measured memory; larger localized alpha changes |
+
+For FP16, download `cdelta/CorridorKey-v2-MLX-fp16` and select `--precision fp16`.
+Keep the downloaded folder layout intact: FP16 and Q8 profiles remain under
+`fp16/` and `q8/`; `--model-root` points to the download directory above them.
+Use a separate download directory for each precision to retain its matching
+manifest and checksums. The
+[combined bundle](https://huggingface.co/cdelta/CorridorKey-v2-MLX) remains available with all three precisions,
+so existing download commands continue to work.
 
 Q8 packs **445 linear matrices**, covering **74.47% of floating-point parameters**,
 and executes them with native MLX quantized matrix multiplication. FP16 and Q8

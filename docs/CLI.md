@@ -2,6 +2,10 @@
 
 [Home](../README.md) · [Models](MODELS.md) · [Python API](API.md)
 
+Download FP32, FP16, or 8-bit profiles from the [model Collection](https://huggingface.co/collections/cdelta/corridorkey-v2-mlx-6ad84231314d2593c3799e34).
+See [model downloads and folder layout](MODELS.md). Separate precision repositories
+use the same `--model-root` and `--precision` options as the combined bundle.
+
 Run `corridorkey-mlx --help` or `python -m corridorkey_mlx --help`.
 The compatibility entry point `python infer_mlx.py` accepts the same arguments.
 Legacy underscore spellings remain available for the original CLI options.
