@@ -4,7 +4,7 @@
 
 ### Native-resolution matting on Apple Silicon
 
-**Five neural networks on MLX. FP32, FP16, and Q8. A Python API and a practical CLI.**
+**MLX • FP32 | FP16 | Q8 • Python API and practical CLI**
 
 [![Code: Apache 2.0](https://img.shields.io/badge/code-Apache_2.0-2563eb)](LICENSE)
 [![Models on Hugging Face](https://img.shields.io/badge/🤗_models-cdelta%2FCorridorKey--v2--MLX-ffd21e)](https://huggingface.co/cdelta/CorridorKey-v2-MLX)
